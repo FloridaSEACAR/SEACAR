@@ -70,7 +70,7 @@ scrptlib <- function(fl){
   
   tmp <- readLines(here(fl))
   tmp <- grep('^library\\(', tmp, value = T)
-  browser()
+ 
   out <- sapply(tmp, function(x) x %>% gsub('library\\(|\\)', '', .)) %>% 
     unlist %>% 
     unique %>% 

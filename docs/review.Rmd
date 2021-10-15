@@ -5,6 +5,12 @@ output:
     toc: true
     toc_float: true
     number_sections: true
+  word_document:
+    toc: true
+    number_sections: true
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding,
+  output_dir = ".", output_format = c("html_document", "word_document")) })
 date: "`r Sys.time()`"
 author: "Marcus W. Beck, mbeck@tbep.org"
 ---
@@ -32,7 +38,14 @@ stopifnot(flsnow$File %in% fls$File)
 # get only files with 'final' in the name
 fls <- fls %>% 
   filter(grepl('final', tolower(File)))
+
+# create text to other format
+frmtxt <- 'View as [HTML document](https://FloridaSEACAR.github.io/SEACAR/review.html)'
+if (knitr::is_html_output())
+  frmtxt <- 'View as [Word document](https://github.com/FloridaSEACAR/SEACAR/raw/marcus/docs/review.docx)'
 ```
+
+`r frmtxt`
 
 # Document overview 
 
