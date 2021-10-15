@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR code review</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-10-15 13:51:24</h4>
+<h4 class="date">2021-10-15 14:34:10</h4>
 
 </div>
 
@@ -694,17 +694,23 @@ div.tocify {
 <ol style="list-style-type: decimal">
 <li>2021.09.19_CoralNektonRichness_FINAL.R
 <ul>
-<li>Objective: .</li>
+<li>Objective: import nekton and coral data, combine, assess relationships between nekton richness and coral cover by managed area.</li>
 <li>Packages: dplyr, gt, nlme, tidyverse</li>
 <li>File inputs: CorSE.csv, CorFLKeys.csv, CorDryTortugas.csv, Nekton2.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - :</li>
+<li>Lines 1 - 43: import coral data for each region (Dry Tortugas, Florida Keys, SE Florida), filter by managed area names, combine all into one object</li>
+<li>Lines 44 - 65: import nekton data, filter by grazers and reef dependent species</li>
+<li>Lines 66 - 90: estimate nekton richness by managed area, year, estimate coral percent cover by managed area, year, combine into one dataset</li>
+<li>Lines 91 - 103: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, output as csv</li>
+<li>Lines 104 - 124: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, separate models by managed area, output as csv</li>
+<li>Lines 125 - 149: create plots of nekton richness vs coral percent cover from model output, save as pdf</li>
+<li>Lines 150 - 236: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: CoralNektonlmeSERegion.csv, CoralNektonlmebyMA.csv, NektonCoral_SppRichnessbyMAmodelPlot.pdf, NektonCoral_SppRichnessbyMAmodelTable.csv</li>
 <li>Potential issues:
 <ul>
-<li>Requires data inputs created in files FINAL 2021.09.18_SE Region_AnyCorals.R, FINAL_2021.09.18_FLAKEYS_AnyCorals.R, FINAL_2021.09.18_DryTort Region_Any Corals.R. Could not locate the file Nekton2.csv.</li>
+<li>Requires data inputs created in files FINAL 2021.09.18_SE Region_AnyCorals.R, FINAL_2021.09.18_FLAKEYS_AnyCorals.R, FINAL_2021.09.18_DryTort Region_Any Corals.R. The Nekton2.csv file is created from Nekton_SE-2021-Jul-26.csv.</li>
 </ul></li>
 </ul></li>
 <li>FINAL_2021.09.18_DryTort Region_Any Corals.R

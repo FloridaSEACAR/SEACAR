@@ -340,14 +340,20 @@ kable(scrpt)
 fl <- scrpt$File[1]
 ```
 1. `r fl`
-     * Objective: .
+     * Objective: import nekton and coral data, combine, assess relationships between nekton richness and coral cover by managed area.
      * Packages: `r scrptlib(fl)`
      * File inputs: `r scrptinp(fl)`
      * Steps by line number:
-          * Lines 1 - :
+          * Lines 1 - 43: import coral data for each region (Dry Tortugas, Florida Keys, SE Florida), filter by managed area names, combine all into one object
+          * Lines 44 - 65: import nekton data, filter by grazers and reef dependent species
+          * Lines 66 - 90: estimate nekton richness by managed area, year, estimate coral percent cover by managed area, year, combine into one dataset
+          * Lines 91 - 103: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, output as csv
+          * Lines 104 - 124: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, separate models by managed area, output as csv 
+          * Lines 125 - 149: create plots of nekton richness vs coral percent cover from model output, save as pdf
+          * Lines 150 - 236: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * Requires data inputs created in files FINAL 2021.09.18_SE Region_AnyCorals.R, FINAL_2021.09.18_FLAKEYS_AnyCorals.R, FINAL_2021.09.18_DryTort Region_Any Corals.R.  Could not locate the file Nekton2.csv.
+          * Requires data inputs created in files FINAL 2021.09.18_SE Region_AnyCorals.R, FINAL_2021.09.18_FLAKEYS_AnyCorals.R, FINAL_2021.09.18_DryTort Region_Any Corals.R.  The Nekton2.csv file is created from Nekton_SE-2021-Jul-26.csv.
 ```{r}
 fl <- scrpt$File[2]
 ```
