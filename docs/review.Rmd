@@ -473,14 +473,23 @@ fl <- scrpt$File[7]
 fl <- scrpt$File[8]
 ```
 1. `r fl`
-     * Objective: .
+     * Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends for any corals across years with linear models.
      * Packages: `r scrptlib(fl)`
      * File inputs: `r scrptinp(fl)`
      * Steps by line number:
-          * Lines 1 - :
+          * Lines 1 - 19: load libraries and import percent cover data for SE Florida
+          * Lines 20 - 78: format data for analysis including removal of non-coral taxa, renaming columns, removing `NA` percent cover data, combining genus/species columns, and removing missing rows for genus/species
+          * Lines 79 - 100: create a summary table for percent cover statistics by year, region across all species, save output
+          * Lines 101 - 111: create linear model year vs percent cover, save model summary plots to pdf
+          * Lines 112 - 126: create boxplots of percent cover for any coral by year, save as pdf
+          * Lines 127 - 143: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID
+          * Lines 144 - 177: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv
+          * Lines 178 - 200: plot model output as estimated linear trend across years by coral region, save as pdf
+          * Lines 201 - 299: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * 
+          * Lines 105, 108: Year is dependent variable in the linear model, it should be the independent variable.
+          * Model results are separate for each coral region, yet the file includes only one region (SE Florida). This does not create incorrect output, but the intention is unclear.
 ```{r}
 fl <- scrpt$File[9]
 ```
