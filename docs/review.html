@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR code review</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-10-15 11:12:09</h4>
+<h4 class="date">2021-10-15 11:39:04</h4>
 
 </div>
 
@@ -733,17 +733,26 @@ div.tocify {
 </ul></li>
 <li>FINAL_2021.09.18_DryTortugas Region_Genus.R
 <ul>
-<li>Objective: .</li>
+<li>Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends by genus across years with linear models.</li>
 <li>Packages: dplyr, gt, nlme, tidyverse</li>
 <li>File inputs: Percent Cover - DRY TORT-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - :</li>
+<li>Lines 1 - 18: load libraries and import percent cover data for Dry Tortugas</li>
+<li>Lines 19 - 83: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>Lines 84 - 103: create a summary table for percent cover statistics by year, genus, region, save output</li>
+<li>Lines 104 - 110: create linear model year vs percent cover, not separated by genus</li>
+<li>Lines 111 - 125: create boxplots of percent cover by genus, year, save as pdf</li>
+<li>Lines 126 - 161: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID. No output created because no genus meets the minimum year requirement.</li>
+<li>Lines 162 - 184: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv. No output created because no genus meets the minimum year requirement.</li>
+<li>Lines 185 - 210: plot model output as estimated linear trend across years by genus, save as pdf. No output created because no genus meets the minimum year requirement.</li>
+<li>Lines 211 - 301: format and summarize model output to create summary table of model fit, saved as csv. No output created because no genus meets the minimum year requirement.</li>
 </ul></li>
 <li>File outputs: CoralSummaryStatisticsTable_Genus_DRYRegion.csv, CoralBoxplots_ByGenus_DRYRegion.pdf, Corallme_ByGenus_DRYRegion.csv, CorallmePlot_ByGenus_DRYRegion.pdf, Coral_lmeResults_ByGenus_DRYRegion.csv</li>
 <li>Potential issues:
 <ul>
-<li></li>
+<li>Lines 108: Year is dependent variable in the linear model, it should be the independent variable.</li>
+<li>No output created because no genus meets the minimum year requirement.</li>
 </ul></li>
 </ul></li>
 <li>FINAL_2021.09.18_DryTortugas Region_Group1.R
@@ -952,7 +961,7 @@ div.tocify {
 <li>Data I/O needs to be evaluated. All scripts use files from a local path and outputs are saved in the working directory. This is an issue to be solved in production.</li>
 <li>For corals, analyses were requested separately by sampling type: fixed or random. Note that this refers to sampling method, not a statistical test. However, the scripts indicate that sample information is unavailable in the input data (e.g., line 22 <a href="https://github.com/FloridaSEACAR/SEACAR/blob/main/FINAL_2021.09.18_DryTort%20Region_Any%20Corals.R">here</a>). The analyses are not done at this time.<br />
 </li>
-<li>For corals, trends in percent cover are assessed using linear mixed-effects models. It may be worth confirming trends using non-parametric analogs. There also does not appear to be a minimum year requirement, unlike trends tests for other habitats (i.e., water column).</li>
+<li>For corals, trends in percent cover are assessed using linear mixed-effects models. It may be worth confirming trends using non-parametric analogs. There also does not appear to be a minimum year requirement for tests in percent cover evaluating all genera, unlike trends tests for other habitats (i.e., water column).</li>
 </ul>
 </div>
 
