@@ -385,7 +385,7 @@ fl <- scrpt$File[3]
           * Lines 126 - 161: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID.  No output created because no genus meets the minimum year requirement.
           * Lines 162 - 184: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv. No output created because no genus meets the minimum year requirement.
           * Lines 185 - 210: plot model output as estimated linear trend across years by genus, save as pdf. No output created because no genus meets the minimum year requirement.
-          * Lines 211 - 301: format and summarize model output to create summary table of model fit, saved as csv.  No output created because no genus meets the minimum year requirement.
+          * Lines 211 - 309: format and summarize model output to create summary table of model fit, saved as csv.  No output created because no genus meets the minimum year requirement.
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
           * Lines 108: Year is dependent variable in the linear model, it should be the independent variable.
@@ -433,27 +433,27 @@ fl <- scrpt$File[5]
 ```{r}
 fl <- scrpt$File[6]
 ```
-1. `r fl`
-     * Objective: .
-     * Packages: `r scrptlib(fl)`
-     * File inputs: `r scrptinp(fl)`
-     * Steps by line number:
-          * Lines 1 - :
-     * File outputs: `r scrptout(fl)`
-     * Potential issues: 
-          * 
+
 ```{r}
 fl <- scrpt$File[7]
 ```
 1. `r fl`
-     * Objective: .
+     * Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends by genus across years with linear models.
      * Packages: `r scrptlib(fl)`
      * File inputs: `r scrptinp(fl)`
      * Steps by line number:
-          * Lines 1 - :
+          * Lines 1 - 17: load libraries and import percent cover data for Florida Keys
+          * Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing `NA` percent cover data, combining genus/species columns, and removing missing rows for genus/species
+          * Lines 83 - 102: create a summary table for percent cover statistics by year, genus, region, save output
+          * Lines 103 - 109: create linear model year vs percent cover, not separated by genus
+          * Lines 110 - 124: create boxplots of percent cover by genus, year, save as pdf
+          * Lines 125 - 160: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID
+          * Lines 161 - 183: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv
+          * Lines 184 - 209: plot model output as estimated linear trend across years by genus, save as pdf
+          * Lines 210 - 308: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * 
+          * Lines 107: Year is dependent variable in the linear model, it should be the independent variable.
 ```{r}
 fl <- scrpt$File[8]
 ```
