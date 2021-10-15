@@ -403,7 +403,7 @@ fl <- scrpt$File[4]
           * Lines 82 - 101: create a summary table for percent cover statistics by year, species group, region, save output
           * Lines 102 - 107: create linear model year vs percent cover, not separated by species group
           * Lines 108 - 122: create boxplots of percent cover by species group, year, save as pdf
-          * Lines 123 - 158: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID, save as csv
+          * Lines 123 - 158: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv
           * Lines 159 - 181: plot model output as estimated linear trend across years by species group, save as pdf
           * Lines 182 - 280: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
@@ -443,7 +443,7 @@ fl <- scrpt$File[6]
           * Lines 83 - 102: create a summary table for percent cover statistics by year, species group, region, save output
           * Lines 103 - 108: create linear model year vs percent cover, not separated by species group
           * Lines 109 - 123: create boxplots of percent cover by species group, year, save as pdf
-          * Lines 124 - 159: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID, save as csv
+          * Lines 124 - 159: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv
           * Lines 160 - 182: plot model output as estimated linear trend across years by species group, save as pdf
           * Lines 183 - 281: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
@@ -516,14 +516,21 @@ fl <- scrpt$File[9]
 fl <- scrpt$File[10]
 ```
 1. `r fl`
-     * Objective: .
+     * Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends by species group across years with linear models.
      * Packages: `r scrptlib(fl)`
      * File inputs: `r scrptinp(fl)`
      * Steps by line number:
-          * Lines 1 - :
+          * Lines 1 - 17: load libraries and import percent cover data for SE Florida
+          * Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing `NA` percent cover data, combining genus/species columns, and removing missing rows for genus/species
+          * Lines 83 - 102: create a summary table for percent cover statistics by year, species group, region, save output
+          * Lines 103 - 108: create linear model year vs percent cover, not separated by species group
+          * Lines 109 - 123: create boxplots of percent cover by species group, year, save as pdf
+          * Lines 124 - 159: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv
+          * Lines 160 - 182: plot model output as estimated linear trend across years by species group, save as pdf
+          * Lines 183 - 281: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * 
+          * Line 107: Year is dependent variable in the linear model, it should be the independent variable.
 
 ## Coastal wetlands
 
@@ -587,3 +594,4 @@ kable(scrpt)
 * For corals, analyses were requested separately by sampling type: fixed or random.  Note that this refers to sampling method, not a statistical test. However, the scripts indicate that sample information is unavailable in the input data (e.g., line 22 [here](https://github.com/FloridaSEACAR/SEACAR/blob/main/FINAL_2021.09.18_DryTort%20Region_Any%20Corals.R)).  The analyses are not done at this time.  
 * For corals, trends in percent cover are assessed using linear mixed-effects models.  It may be worth confirming trends using non-parametric analogs, particular since percent cover is generally a right-skewed variable. There also is not a minimum year requirement for tests in percent cover evaluating any coral and for species groups, unlike trends tests for other habitats (i.e., water column). However, there is a minimum year requirement for tests evaluating genera.
 * Trend tests for percent cover of coral by genus require a minimum of ten years of data. For the Dry Tortugas and SE Florida region, no genus meet the criteria.  The analysis script returns errors as opposed to informative output indicating insufficient data.  This is an issue that could be solved through package development, e.g., using `stopifnot()`, or other error handling so that analyses don't "break" in production when test criteria are unmet. 
+* As with other habitat types, the coral analyses could be greatly simplified by creating functions that accomplish routine tasks. Each analysis is similar - for each region, create a linear model of percent cover across years, with separate models for all taxa combined, by genus, or by species groups.  Standardized outputs are also created, e.g., plots of model predictions, tables of model summaries, plots of observed data, etc.  All of this can be turned into functions, including appropriate exceptions within each function to handle unique cases (e.g., filter genus data for those with at least ten years of data).
