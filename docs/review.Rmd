@@ -81,8 +81,8 @@ fl <- scrpt$File[1]
           * Lines 188 - 206: boxplot summaries of surface phosphorus by year, year/month for complete dataset
           * Lines 208 - 222: boxplot summaries of surface phosphorus by year/month, separate for managed areas
           * Lines 223 - 239: boxplot summaries of surface phosphorus by year, separate for managed areas
-          * Lines 240 - 264: Average phosphorus by year, month, managed area to prep for trend test
-          * Lines 265 - 322: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 240 - 264: average phosphorus by year, month, managed area to prep for trend test
+          * Lines 265 - 322: identify number of unique years in each dataset, remove those with < 10
           * Lines 323 - 349: plots of average year, month phosphorus, separate for managed areas
           * Lines 350 - 368: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 369 - 440: format all trend tests in a simple table, combine with region names, save output as csv
@@ -105,8 +105,8 @@ fl <- scrpt$File[2]
           * Lines 187 - 205: boxplot summaries of surface CDOM by year, year/month for complete dataset
           * Lines 206 - 216: boxplot summaries of surface CDOM by year/month, separate for managed areas
           * Lines 217 - 238: boxplot summaries of surface CDOM by year, separate for managed areas
-          * Lines 239 - 262: Average CDOM by year, month, managed area to prep for trend test
-          * Lines 263 - 320: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 239 - 262: average CDOM by year, month, managed area to prep for trend test
+          * Lines 263 - 320: identify number of unique years in each dataset, remove those with < 10
           * Lines 321 - 347: plots of average year, month CDOM, separate for managed areas
           * Lines 350 - 366: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 367 - 438: format all trend tests in a simple table, combine with region names, save output as csv
@@ -131,8 +131,8 @@ fl <- scrpt$File[3]
           * Lines 186 - 205: boxplot summaries of surface chlorophyll by year, year/month for complete dataset
           * Lines 206 - 220: boxplot summaries of surface chlorophyll by year/month, separate for managed areas
           * Lines 221 - 237: boxplot summaries of surface chlorophyll by year, separate for managed areas
-          * Lines 238 - 261: Average chlorophyll by year, month, managed area to prep for trend test
-          * Lines 262 - 319: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 238 - 261: average chlorophyll by year, month, managed area to prep for trend test
+          * Lines 262 - 319: identify number of unique years in each dataset, remove those with < 10
           * Lines 320 - 346: plots of average year, month chlorophyll, separate for managed areas
           * Lines 347 - 365: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 366 - 437: format all trend tests in a simple table, combine with region names, save output as csv
@@ -154,8 +154,8 @@ fl <- scrpt$File[4]
           * Lines 187 - 205: boxplot summaries of surface turbidity by year, year/month for complete dataset
           * Lines 206 - 221: boxplot summaries of surface turbidity by year/month, separate for managed areas
           * Lines 222 - 238: boxplot summaries of surface turbidity by year, separate for managed areas
-          * Lines 239 - 262: Average turbidity by year, month, managed area to prep for trend test
-          * Lines 263 - 320: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 239 - 262: average turbidity by year, month, managed area to prep for trend test
+          * Lines 263 - 320: identify number of unique years in each dataset, remove those with < 10
           * Lines 321 - 347: plots of average year, month turbidity, separate for managed areas
           * Lines 348 - 366: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 367 - 438: format all trend tests in a simple table, combine with region names, save output as csv
@@ -177,8 +177,8 @@ fl <- scrpt$File[5]
           * Lines 220 - 239: boxplot summaries of surface nitrogen by year, year/month for complete dataset
           * Lines 240 - 255: boxplot summaries of surface nitrogen by year/month, separate for managed areas
           * Lines 256 - 272: boxplot summaries of surface nitrogen by year, separate for managed areas
-          * Lines 273 - 296: Average nitrogen by year, month, managed area to prep for trend test
-          * Lines 297 - 354: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 273 - 296: average nitrogen by year, month, managed area to prep for trend test
+          * Lines 297 - 354: identify number of unique years in each dataset, remove those with < 10
           * Lines 355 - 381: plots of average year, month nitrogen, separate for managed areas
           * Lines 382 - 400: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 401 - 472: format all trend tests in a simple table, combine with region names, save output as csv
@@ -202,8 +202,8 @@ fl <- scrpt$File[6]
           * Lines 194 - 212: boxplot summaries of surface dissolved oxygen saturation by year, year/month for complete dataset
           * Lines 213 - 228: boxplot summaries of surface dissolved oxygen saturation by year/month, separate for managed areas
           * Lines 229 - 245: boxplot summaries of surface dissolved oxygen saturation by year, separate for managed areas
-          * Lines 246 - 269: Average dissolved oxygen saturation by year, month, managed area to prep for trend test
-          * Lines 270 - 327: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 246 - 269: average dissolved oxygen saturation by year, month, managed area to prep for trend test
+          * Lines 270 - 327: identify number of unique years in each dataset, remove those with < 10
           * Lines 328 - 354: plots of average year, month dissolved oxygen saturation, separate for managed areas
           * Lines 355 - 373: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv
@@ -224,8 +224,8 @@ fl <- scrpt$File[7]
           * Lines 194 - 212: boxplot summaries of surface dissolved oxygen concentration by year, year/month for complete dataset
           * Lines 213 - 228: boxplot summaries of surface dissolved oxygen concentration by year/month, separate for managed areas
           * Lines 229 - 245: boxplot summaries of surface dissolved oxygen concentration by year, separate for managed areas
-          * Lines 246 - 269: Average dissolved oxygen concentration by year, month, managed area to prep for trend test
-          * Lines 270 - 327: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 246 - 269: average dissolved oxygen concentration by year, month, managed area to prep for trend test
+          * Lines 270 - 327: identify number of unique years in each dataset, remove those with < 10
           * Lines 328 - 354: plots of average year, month dissolved oxygen concentration, separate for managed areas
           * Lines 355 - 373: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv
@@ -246,8 +246,8 @@ fl <- scrpt$File[8]
           * Lines 194 - 212: boxplot summaries of surface pH by year, year/month for complete dataset
           * Lines 213 - 228: boxplot summaries of surface pH by year/month, separate for managed areas
           * Lines 229 - 245: boxplot summaries of surface pH by year, separate for managed areas
-          * Lines 246 - 269: Average pH by year, month, managed area to prep for trend test
-          * Lines 270 - 327: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 246 - 269: average pH by year, month, managed area to prep for trend test
+          * Lines 270 - 327: identify number of unique years in each dataset, remove those with < 10
           * Lines 328 - 354: plots of average year, month pH, separate for managed areas
           * Lines 355 - 373: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv
@@ -269,8 +269,8 @@ fl <- scrpt$File[9]
           * Lines 194 - 212: boxplot summaries of surface salinity by year, year/month for complete dataset
           * Lines 213 - 228: boxplot summaries of surface salinity by year/month, separate for managed areas
           * Lines 229 - 245: boxplot summaries of surface salinity by year, separate for managed areas
-          * Lines 246 - 269: Average salinity by year, month, managed area to prep for trend test
-          * Lines 270 - 327: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 246 - 269: average salinity by year, month, managed area to prep for trend test
+          * Lines 270 - 327: identify number of unique years in each dataset, remove those with < 10
           * Lines 328 - 354: plots of average year, month salinity, separate for managed areas
           * Lines 355 - 373: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv
@@ -291,8 +291,8 @@ fl <- scrpt$File[10]
           * Lines 194 - 212: boxplot summaries of surface temperature by year, year/month for complete dataset
           * Lines 213 - 228: boxplot summaries of surface temperature by year/month, separate for managed areas
           * Lines 229 - 245: boxplot summaries of surface temperature by year, separate for managed areas
-          * Lines 246 - 269: Average temperature by year, month, managed area to prep for trend test
-          * Lines 270 - 327: Identify number of unique years in each dataset, remove those with < 10
+          * Lines 246 - 269: average temperature by year, month, managed area to prep for trend test
+          * Lines 270 - 327: identify number of unique years in each dataset, remove those with < 10
           * Lines 328 - 354: plots of average year, month temperature, separate for managed areas
           * Lines 355 - 373: run trend tests, first on a "test" site then for all, results saved as raw output from the trend test
           * Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv
@@ -310,14 +310,14 @@ fl <- scrpt$File[11]
      * File inputs: `r scrptinp(fl)`
      * Steps by line number:
           * Lines 1 - 19: load libraries and import nekton data
-          * Lines 20 - 30: Combine genus, species columns as one, remove any rows with missing genus or management area names 
-          * Lines 31 - 52: Calculate richness metrics management area, region, year
-          * Lines 53 - 69: Identify number of unique years in each dataset, remove those with < 5
-          * Lines 70 - 86: Create linear mixed models evaluating richness vs year, using a random region effect
-          * Lines 87 - 113: Create plot of richness vs year by management area using model output
-          * Lines 114 - 141: Tabular summary of richness vs year by  management area
-          * Lines 142 - 166: Tabular summary of richness vs year by management area, similar info as previous table
-          * Lines 167 - 200: Join results from the previous two tables, save output as csv
+          * Lines 20 - 30: combine genus, species columns as one, remove any rows with missing genus or management area names 
+          * Lines 31 - 52: calculate richness metrics management area, region, year
+          * Lines 53 - 69: identify number of unique years in each dataset, remove those with < 5
+          * Lines 70 - 86: create linear mixed models evaluating richness vs year, using a random region effect
+          * Lines 87 - 113: create plot of richness vs year by management area using model output
+          * Lines 114 - 141: tabular summary of richness vs year by  management area
+          * Lines 142 - 166: tabular summary of richness vs year by management area, similar info as previous table
+          * Lines 167 - 200: join results from the previous two tables, save output as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
           * Line 38: `NA` values are incorrectly identified, should do this with a regular expression search.
@@ -352,14 +352,23 @@ fl <- scrpt$File[1]
 fl <- scrpt$File[2]
 ```
 1. `r fl`
-     * Objective: .
+     * Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends across years with linear models.
      * Packages: `r scrptlib(fl)`
      * File inputs: `r scrptinp(fl)`
      * Steps by line number:
-          * Lines 1 - :
+          * Lines 1 - 20: load libraries and import percent cover data for Dry Tortugas
+          * Lines 21 - 79: format data for analysis including removal of non-coral taxa, renaming columns, removing `NA` percent cover data, combining genus/species columns, and removing missing rows for genus/species
+          * Lines 80 - 101: create a summary table for percent cover statistics by year, region across all species, save output
+          * Lines 102 - 112: create linear model year vs percent cover, save model summary plots to pdf
+          * Lines 113 - 128: create boxplots of percent cover for any coral by year, save as pdf
+          * Lines 129 - 145: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID
+          * Lines 146 - 179: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv
+          * Lines 180 - 202: plot model output as estimated linear trend across years by coral region, save as pdf
+          * Lines 203 - 301: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * 
+          * Lines 106, 109: Year is dependent variable in the linear model, it should be the independent variable.
+          * Model results are separate for each coral region, yet the file includes only one region (Dry Tortugas). This does not create incorrect output, but the intention is unclear.
 ```{r}
 fl <- scrpt$File[3]
 ```
@@ -443,7 +452,7 @@ fl <- scrpt$File[9]
           * Lines 1 - :
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * 
+          * Could not locate the input file Percent Cover - FLA SE-2021-Jul-26.csv
 ```{r}
 fl <- scrpt$File[10]
 ```
@@ -484,18 +493,6 @@ kable(scrpt)
 
 1. `r scrpt$File[1]`
 1. `r scrpt$File[2]`
-1. `r scrpt$File[3]`
-1. `r scrpt$File[4]`
-1. `r scrpt$File[5]`
-1. `r scrpt$File[6]`
-1. `r scrpt$File[7]`
-1. `r scrpt$File[8]`
-1. `r scrpt$File[9]`
-1. `r scrpt$File[10]`
-1. `r scrpt$File[11]`
-1. `r scrpt$File[12]`
-1. `r scrpt$File[13]`
-1. `r scrpt$File[14]`
 
 <!-- ## Oyster reef -->
 
@@ -517,16 +514,16 @@ kable(scrpt)
 
 # General comments
 
-Coding style: 
-
 * Leverage more tools from the tidyverse for more concise, streamline coding. For example, use `case_when` instead of nested `ifelse` statements. 
 * Modularize the parts of copied code in functions.  For example, the scripts for water quality variables are all very similar.  Functions could be created to remove NAs, filter by QA codes, create summary plots, run trend tests, and format results.  
 * General issue with portability, environment for analysis is not isolated, i.e., scripts were created on a local computer and specific setup was unknown.  Could be solved by package devevelopment, possibly combined with Docker container.  Use of `rm(list = ls()` at the top of many scripts demonstrates the problem.   
 * Many scripts use `install.packages()` which is not necessary for running the scripts in production.
-* Some libraries are loaded more than once (e.g., tidyverse, then dplyr which is included in tidyverse, as in lines 25-29 [here](https://github.com/FloridaSEACAR/SEACAR2/blob/master/2021.08.21_FINAL_SEACAR%20Water_Nutrients_Phosphorus_FINAL.R)).  This does not impact performance but creates challenges for tracking dependencies. All relevant libraries should be entered at the top of each script.
-* Use of logical values entered as text strings (e.g., line 151 [here](https://github.com/FloridaSEACAR/SEACAR2/blob/master/2021.08.21_FINAL_SEACAR%20Water_Nutrients_Phosphorus_FINAL.R)) is incorrect and should use the actual atomic values, i.e., `TRUE`, `FALSE`.
+* Some libraries are loaded more than once (e.g., tidyverse, then dplyr which is included in tidyverse, as in lines 25-29 [here](https://github.com/FloridaSEACAR/SEACAR/blob/master/2021.08.21_FINAL_SEACAR%20Water_Nutrients_Phosphorus_FINAL.R)).  This does not impact performance but creates challenges for tracking dependencies. All relevant libraries should be entered at the top of each script.
+* Use of logical values entered as text strings (e.g., line 151 [here](https://github.com/FloridaSEACAR/SEACAR/blob/master/2021.08.21_FINAL_SEACAR%20Water_Nutrients_Phosphorus_FINAL.R)) is incorrect and should use the actual atomic values, i.e., `TRUE`, `FALSE`.
 * Water quality trend tests are based on average year, month values.  Is it possible to run these tests without averaging first?  This reduces sample size and removes real variability that could influence the outcome.
 * Month, year summary boxplots for water column variables are difficult to interpret as all values are chronological, maybe better to show just month on x-axis, then facet by year. 
-* Output files created with sink create a csv but this would be more appropriate as a text file since these are not tabular data (e.g., line 361 [here](https://github.com/FloridaSEACAR/SEACAR2/blob/master/2021.08.21_FINAL_SEACAR_Water%20Clarity_chla_Final.R)).
-* Formatted tables with trend statistics for water column data should have number of years for which the trend applies, in addition to min/max years. The time series for each managed area are all different and it's useful to provide this information. 
-* Data I/O needs to be evaluated.  All scripts use files from a local path and outputs are saved in the working directory.  This is an issue to be solved in production.  
+* Output files created with sink create a csv but this would be more appropriate as a text file since these are not tabular data (e.g., line 361 [here](https://github.com/FloridaSEACAR/SEACAR/blob/master/2021.08.21_FINAL_SEACAR_Water%20Clarity_chla_Final.R)).
+* Formatted water column tables with trend statistics for water column data should have number of years for which the trend applies, in addition to min/max years. The time series for each managed area are all different and it's useful to provide this information. 
+* Data I/O needs to be evaluated.  All scripts use files from a local path and outputs are saved in the working directory.  This is an issue to be solved in production. 
+* For corals, analyses were requested separately by sampling type: fixed or random.  Note that this refers to sampling method, not a statistical test. However, the scripts indicate that sample information is unavailable in the input data (e.g., line 22 [here](https://github.com/FloridaSEACAR/SEACAR/blob/main/FINAL_2021.09.18_DryTort%20Region_Any%20Corals.R)).  The analyses are not done at this time.  
+* For corals, trends in percent cover are assessed using linear mixed-effects models.  It may be worth confirming trends using non-parametric analogs. There also does not appear to be a minimum year requirement, unlike trends tests for other habitats (i.e., water column). 

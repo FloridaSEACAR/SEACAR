@@ -1,31 +1,4 @@
 category,file
-oy,2019.06.29_SEACAR_OYSTER_DensityandSizeClassAnalyses.R
-oy,2019.06.29_SEACAR_OYSTER_PercentLiveandReefMeasurementAnalyses.R
-wc,2019.06.30_SEACAR_NEKTON_SpeciesRichnessbyRegion.R
-wc,2019.06.30_SEACAR_NEKTON_SpeciesRichnessOverTime.R
-co,2020.06.12_Coral_BuildFilesforAnalyses_PercCov.R
-co,2020.06.12_coralTort_PercCov_Group1.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverAnyCoral_AllRegions.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverANyCoral_DryTortugasRegion.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverAnyCoral_SoutheastRegion.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverGenus_DryTortugasRegion.R
-co,2020.06.12_SEACAR_CORAL_PercentCovergenus_KeysRegion.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverGenus_SoutheastRegion.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverGroup1_AllRegions.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverGroup1_KeysRegion.R
-co,2020.06.12_SEACAR_CORAL_PercentCoverGroup1_SoutheastRegion.R
-co,2020.06.126_Coral_BuildFilesforAnalyses_SpeciesRichness.R
-co,2020.06.16_SEACAR CORAL_SpeciesRichness_AllRegions.R
-co,2020.06.16_SEACAR CORAL_SpeciesRichness_DryTortugasRegion.R
-co,2020.06.16_SEACAR CORAL_SpeciesRichness_KeysRegion.R
-co,2020.06.16_SEACAR CORAL_SpeciesRichness_SoutheastRegion.R
-sg,2020.06.25_SEACAR_SAV_Skeleton Script.R
-wc,2020.06.29_SEACAR_WATERCOLUMN_SkeletonScript.R
-cw,2020.06.30_SEACAR_COASTALWETLANDS_SpeciesRichnessbyLocationID.R
-cw,2020.06.30_SEACAR_COASTALWETLANDS_SpeciesRichnessbyYear.R
-ch,2020.06.30_SEACAR_CrossHab_SkeletonScript.R
-co,2020.06_SEACAR_CORAL_PercentCoverAnyCoral_KeysRegion.R
-co,2020.06_SEACAR_CORAL_PercentCoverGenus_AllRegions.R
 wc,2021.08.21_FINAL_SEACAR Water_Nutrients_Phosphorus_FINAL.R
 wc,2021.08.21_FINAL_SEACAR_Water Clarity_CDOM_Final.R
 wc,2021.08.21_FINAL_SEACAR_Water Clarity_chla_Final.R
@@ -36,21 +9,13 @@ wc,2021.08.22_FINAL_SEACAR_WaterQuality_DOmgL_Final.R
 wc,2021.08.22_FINAL_SEACAR_WaterQuality_pH_Final.R
 wc,2021.08.22_FINAL_SEACAR_WaterQuality_Salinity.R
 wc,2021.08.22_FINAL_SEACAR_WATERQUALITY_Temperature_Final.R
-sg,2021.08.23_FINAL_SEACAR_ALG_Perccov_Final.R
 co,2021.09.19_CoralNektonRichness_FINAL.R
 cw,2021.09.19_WetlandsPercentCover.R
-sg,buildSAVforlme.R
-wc,buildsecchiforlme.R
 cw,Final 2021.09.19_SEACAR_CoastalWetlands_GroupRichness.R
 cw,FINAL 2021.09.19_SEACAR_CoastalWetlands_SppRich_Region.R
 wc,FINAL 2021.09.19_WaterNekton_SppRichnessbyMA.R
-sg,FINAL 2021.09.20_SAV_Subsetting data by sampling method.R
 sg,FINAL Percent Cover by Secchi.R
 sg,FINAL Percent Cover by Turbidity.R
-sg,FINAL SEACAR ALG ModBB.R
-sg,FINAL SEACAR SAV ModifiedBraunBlanquet_script.R
-sg,FINAL SEACAR_ALG__Frequency of Occurence Plotting_FINAL_2021.07.25.R
-sg,FINAL SEACAR_ALG__Frequency of Occurence Plotting_FINAL_2021.08.13.R
 co,FINAL_2021.09.18_DryTort Region_Any Corals.R
 co,FINAL_2021.09.18_DryTortugas Region_Genus.R
 co,FINAL_2021.09.18_DryTortugas Region_Group1.R
@@ -60,10 +25,5 @@ co,FINAL_2021.09.18_Keys Region_Genus.R
 co,FINAL_2021.09.18_SE Region_AnyCorals.R
 co,FINAL_2021.09.18_SE_Genus.R
 co,FINAL_2021.09.18_SERegion_Group1.R
-sg,FINAL_SEACAR_ALG_FrequencyofOccurrenceAnalysisCode_FINAL_2021.08.16.R
-sg,FINAL_SEACAR_SAV_BB_script.R
-sg,FINAL_SEACAR_SAV_Frequency of Ocurrence Plotting_FINAL_2021.07.29.R
-sg,FINAL_SEACAR_SAV_Frequency of Ocurrence Plotting_FINAL_2021.08.18.R
-sg,FINAL_SEACAR_SAV_FrequencyofOccurrenceAnalysisCode_FINAL_2021.08.02.R
-sg,FINAL_SEACAR_SAV_PercentCover_FINAL.R
-wc,turbidforlme.R
+oy,SEACAR_Oyster_Analyses_AnalysesOnly_03-08-2021.Rmd
+oy,SEACAR_Oyster_Analyses_RefInfo_03-08-2021.Rmd
