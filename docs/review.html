@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR code review</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-10-15 11:39:04</h4>
+<h4 class="date">2021-10-15 12:00:31</h4>
 
 </div>
 
@@ -709,7 +709,7 @@ div.tocify {
 </ul></li>
 <li>FINAL_2021.09.18_DryTort Region_Any Corals.R
 <ul>
-<li>Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends across years with linear models.</li>
+<li>Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends for any corals across years with linear models.</li>
 <li>Packages: dplyr, gt, nlme, tidyverse</li>
 <li>File inputs: Percent Cover - DRY TORT-2021-Jul-26.csv</li>
 <li>Steps by line number:
@@ -757,32 +757,48 @@ div.tocify {
 </ul></li>
 <li>FINAL_2021.09.18_DryTortugas Region_Group1.R
 <ul>
-<li>Objective: .</li>
+<li>Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends by species group across years with linear models.</li>
 <li>Packages: dplyr, gt, nlme, tidyverse</li>
 <li>File inputs: Percent Cover - DRY TORT-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - :</li>
+<li>Lines 1 - 17: load libraries and import percent cover data for Dry Tortugas</li>
+<li>Lines 18 - 81: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>Lines 82 - 101: create a summary table for percent cover statistics by year, species group, region, save output</li>
+<li>Lines 102 - 107: create linear model year vs percent cover, not separated by species group</li>
+<li>Lines 108 - 122: create boxplots of percent cover by species group, year, save as pdf</li>
+<li>Lines 123 - 158: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID</li>
+<li>Lines 159 - 181: plot model output as estimated linear trend across years by species group, save as pdf</li>
+<li>Lines 182 - 280: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: CoralSummaryStatisticsTable_Group1_DryTortugasRegion.csv, CoralBoxplots_ByGroup1_DRYRegion.pdf, Corallme_ByGroup1_DRYRegion.csv, CorallmePlot_ByGroup1_DRYRegion.pdf, Coral_lmeResults_ByGroup1_DryTortugasRegion.csv</li>
 <li>Potential issues:
 <ul>
-<li></li>
+<li>Lines 106: Year is dependent variable in the linear model, it should be the independent variable.</li>
 </ul></li>
 </ul></li>
 <li>FINAL_2021.09.18_FLAKEYS_AnyCorals.R
 <ul>
-<li>Objective: .</li>
+<li>Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends for any corals across years with linear models.</li>
 <li>Packages: dplyr, gt, nlme, tidyverse</li>
 <li>File inputs: Percent Cover - FLA KEYS-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - :</li>
+<li>Lines 1 - 20: load libraries and import percent cover data for Florida Keys</li>
+<li>Lines 21 - 79: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>Lines 80 - 101: create a summary table for percent cover statistics by year, region across all species, save output</li>
+<li>Lines 102 - 112: create linear model year vs percent cover, save model summary plots to pdf</li>
+<li>Lines 113 - 127: create boxplots of percent cover for any coral by year, save as pdf</li>
+<li>Lines 128 - 144: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
+<li>Lines 145 - 178: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
+<li>Lines 179 - 201: plot model output as estimated linear trend across years by coral region, save as pdf</li>
+<li>Lines 202 - 300: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: CoralSummaryStatisticsTable_AnyCoral_FLKEYSRegion.csv, CoralSummaryStatisticsPlots_AnyCoral_FLKEYSRegion.pdf, CorFLKeys.csv, CoralBoxplots_AnyCoral_FLKEYSRegion.pdf, Corallme_AnyCoral_FLKEYSRegion.csv, CorallmePlot_AnyCoral_FLKEYSRegion.pdf, Coral_lmeResults_AnyCoral_FLKEYSRegion.csv</li>
 <li>Potential issues:
 <ul>
-<li></li>
+<li>Lines 106, 109: Year is dependent variable in the linear model, it should be the independent variable.</li>
+<li>Model results are separate for each coral region, yet the file includes only one region (Florida Keys). This does not create incorrect output, but the intention is unclear.</li>
 </ul></li>
 </ul></li>
 <li>FINAL_2021.09.18_FLKeysRegion_Group1.R
@@ -961,7 +977,7 @@ div.tocify {
 <li>Data I/O needs to be evaluated. All scripts use files from a local path and outputs are saved in the working directory. This is an issue to be solved in production.</li>
 <li>For corals, analyses were requested separately by sampling type: fixed or random. Note that this refers to sampling method, not a statistical test. However, the scripts indicate that sample information is unavailable in the input data (e.g., line 22 <a href="https://github.com/FloridaSEACAR/SEACAR/blob/main/FINAL_2021.09.18_DryTort%20Region_Any%20Corals.R">here</a>). The analyses are not done at this time.<br />
 </li>
-<li>For corals, trends in percent cover are assessed using linear mixed-effects models. It may be worth confirming trends using non-parametric analogs. There also does not appear to be a minimum year requirement for tests in percent cover evaluating all genera, unlike trends tests for other habitats (i.e., water column).</li>
+<li>For corals, trends in percent cover are assessed using linear mixed-effects models. It may be worth confirming trends using non-parametric analogs. There also is not a minimum year requirement for tests in percent cover evaluating any coral and for species groups, unlike trends tests for other habitats (i.e., water column). However, there is a minimum year requirement for tests evaluating genera.</li>
 </ul>
 </div>
 
