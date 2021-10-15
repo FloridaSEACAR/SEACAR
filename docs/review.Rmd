@@ -403,7 +403,7 @@ fl <- scrpt$File[4]
           * Lines 82 - 101: create a summary table for percent cover statistics by year, species group, region, save output
           * Lines 102 - 107: create linear model year vs percent cover, not separated by species group
           * Lines 108 - 122: create boxplots of percent cover by species group, year, save as pdf
-          * Lines 123 - 158: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID
+          * Lines 123 - 158: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID, save as csv
           * Lines 159 - 181: plot model output as estimated linear trend across years by species group, save as pdf
           * Lines 182 - 280: format and summarize model output to create summary table of model fit, saved as csv
      * File outputs: `r scrptout(fl)`
@@ -433,7 +433,22 @@ fl <- scrpt$File[5]
 ```{r}
 fl <- scrpt$File[6]
 ```
-
+1. `r fl`
+     * Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends by species group across years with linear models.
+     * Packages: `r scrptlib(fl)`
+     * File inputs: `r scrptinp(fl)`
+     * Steps by line number:
+          * Lines 1 - 17: load libraries and import percent cover data for Florida Keys
+          * Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing `NA` percent cover data, combining genus/species columns, and removing missing rows for genus/species
+          * Lines 83 - 102: create a summary table for percent cover statistics by year, species group, region, save output
+          * Lines 103 - 108: create linear model year vs percent cover, not separated by species group
+          * Lines 109 - 123: create boxplots of percent cover by species group, year, save as pdf
+          * Lines 124 - 159: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID, save as csv
+          * Lines 160 - 182: plot model output as estimated linear trend across years by species group, save as pdf
+          * Lines 183 - 281: format and summarize model output to create summary table of model fit, saved as csv
+     * File outputs: `r scrptout(fl)`
+     * Potential issues: 
+          * Lines 107: Year is dependent variable in the linear model, it should be the independent variable.
 ```{r}
 fl <- scrpt$File[7]
 ```

@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR code review</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-10-15 12:54:24</h4>
+<h4 class="date">2021-10-15 13:05:25</h4>
 
 </div>
 
@@ -767,7 +767,7 @@ div.tocify {
 <li>Lines 82 - 101: create a summary table for percent cover statistics by year, species group, region, save output</li>
 <li>Lines 102 - 107: create linear model year vs percent cover, not separated by species group</li>
 <li>Lines 108 - 122: create boxplots of percent cover by species group, year, save as pdf</li>
-<li>Lines 123 - 158: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID</li>
+<li>Lines 123 - 158: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID, save as csv</li>
 <li>Lines 159 - 181: plot model output as estimated linear trend across years by species group, save as pdf</li>
 <li>Lines 182 - 280: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
@@ -799,6 +799,28 @@ div.tocify {
 <ul>
 <li>Lines 106, 109: Year is dependent variable in the linear model, it should be the independent variable.</li>
 <li>Model results are separate for each coral region, yet the file includes only one region (Florida Keys). This does not create incorrect output, but the intention is unclear.</li>
+</ul></li>
+</ul></li>
+<li>FINAL_2021.09.18_FLKeysRegion_Group1.R
+<ul>
+<li>Objective: Import and format percent cover data, create summary boxplots, evaluate percent cover trends by species group across years with linear models.</li>
+<li>Packages: dplyr, gt, nlme, tidyverse</li>
+<li>File inputs: Percent Cover - FLA KEYS-2021-Jul-26.csv</li>
+<li>Steps by line number:
+<ul>
+<li>Lines 1 - 17: load libraries and import percent cover data for Florida Keys</li>
+<li>Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>Lines 83 - 102: create a summary table for percent cover statistics by year, species group, region, save output</li>
+<li>Lines 103 - 108: create linear model year vs percent cover, not separated by species group</li>
+<li>Lines 109 - 123: create boxplots of percent cover by species group, year, save as pdf</li>
+<li>Lines 124 - 159: create linear mixed effects model of percent cover for each species groups vs year, random effect for program location ID, save as csv</li>
+<li>Lines 160 - 182: plot model output as estimated linear trend across years by species group, save as pdf</li>
+<li>Lines 183 - 281: format and summarize model output to create summary table of model fit, saved as csv</li>
+</ul></li>
+<li>File outputs: CoralSummaryStatisticsTable_Group1_KEYSRegion.csv, CoralBoxplots_ByGroup1_KEYSRegion.pdf, Corallme_ByGroup1_KEYSRegion.csv, CorallmePlot_ByGroup1_KEYSRegion.pdf, Coral_lmeResults_ByGroup1_KEYSRegion.csv</li>
+<li>Potential issues:
+<ul>
+<li>Lines 107: Year is dependent variable in the linear model, it should be the independent variable.</li>
 </ul></li>
 </ul></li>
 <li>FINAL_2021.09.18_Keys Region_Genus.R
