@@ -61,7 +61,7 @@ scrptout <- function(fl){
   # hyperlink if files in output
   outfls <- list.files(here('docs/output'))
   fnd <- out %in% outfls
-  out[fnd] <- paste0('[', out[fnd], '](output/', out[fnd], ')')
+  out[fnd] <- paste0('[', out[fnd], '](https://FloridaSEACAR.github.io/SEACAR/output/', out[fnd], '){target="_blank"}')
   
   # concatenate
   out <- paste(out, collapse = ', ')
