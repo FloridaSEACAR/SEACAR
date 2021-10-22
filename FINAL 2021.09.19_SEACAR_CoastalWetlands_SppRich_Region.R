@@ -13,7 +13,7 @@ library(tidyverse)
 library(dplyr)
 
 #read in subsetted file that the above code produced and saved
-wetlands <- read.csv("~/Downloads/All Parameters but Hecatres-2021-Jul-26.csv")
+wetlands <- read.csv("~/Desktop/All Parameters but Hecatres-2021-Jul-26.csv")
 colnames(wetlands)
 
 #colnames(wetlands) [23]<-"perccov"
