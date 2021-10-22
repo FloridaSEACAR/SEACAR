@@ -1,0 +1,14 @@
+Linear mixed-effects model fit by REML
+  Data: df 
+  Log-restricted-likelihood: -90.63986
+  Fixed: GenericRichness ~ MeanPercCov 
+(Intercept) MeanPercCov 
+ 103.411404   -5.432474 
+
+Random effects:
+ Formula: ~1 | Year
+        (Intercept) Residual
+StdDev:    35.24969   16.907
+
+Number of Observations: 20
+Number of Groups: 13 

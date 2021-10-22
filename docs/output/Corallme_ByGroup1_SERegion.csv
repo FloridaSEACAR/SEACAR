@@ -1,0 +1,104 @@
+$Scleractinian
+Linear mixed-effects model fit by REML
+ Data: subset(CorSE, SpeciesGroup1 == i) 
+       AIC      BIC    logLik
+  1455.243 1471.278 -723.6214
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+        (Intercept) Residual
+StdDev:     1.60349 1.052651
+
+Fixed effects: Perccov ~ Year 
+                Value Std.Error  DF     t-value p-value
+(Intercept) -4.402949  70.64125 267 -0.06232830  0.9503
+Year         0.002978   0.03506 267  0.08496421  0.9324
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-4.95082685 -0.17042468 -0.06612962 -0.01134435  6.38667422 
+
+Number of Observations: 409
+Number of Groups: 141 
+
+$Zoanthid
+Linear mixed-effects model fit by REML
+ Data: subset(CorSE, SpeciesGroup1 == i) 
+       AIC      BIC    logLik
+  279.1433 286.6281 -135.5716
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+        (Intercept) Residual
+StdDev:    2.777084 2.570564
+
+Fixed effects: Perccov ~ Year 
+                 Value Std.Error DF   t-value p-value
+(Intercept) -1265.7474  734.2766 44 -1.723802  0.0918
+Year            0.6297    0.3642 44  1.728817  0.0909
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-0.72288486 -0.41281729 -0.27072410  0.06500752  2.29400429 
+
+Number of Observations: 50
+Number of Groups: 46 
+
+$Milleporans
+Linear mixed-effects model fit by REML
+ Data: subset(CorSE, SpeciesGroup1 == i) 
+       AIC      BIC    logLik
+  193.2374 203.0548 -92.61872
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+         (Intercept)  Residual
+StdDev: 2.119619e-05 0.6614793
+
+Fixed effects: Perccov ~ Year 
+                Value Std.Error DF   t-value p-value
+(Intercept) 142.42239 27.154022 61  5.244983       0
+Year         -0.07005  0.013482 61 -5.196038       0
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.99046900 -0.48598501 -0.29601554 -0.08420886  4.05658324 
+
+Number of Observations: 88
+Number of Groups: 63 
+
+$Octocoral
+Linear mixed-effects model fit by REML
+ Data: subset(CorSE, SpeciesGroup1 == i) 
+      AIC      BIC    logLik
+  1094.08 1108.882 -543.0402
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+        (Intercept) Residual
+StdDev:     4.24305 1.105973
+
+Fixed effects: Perccov ~ Year 
+                Value Std.Error  DF   t-value p-value
+(Intercept) -92.19574  88.73623 250 -1.038987  0.2998
+Year          0.04793   0.04411 250  1.086653  0.2782
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-5.34585073 -0.05894599 -0.02275025  0.07601266  5.83109032 
+
+Number of Observations: 301
+Number of Groups: 50 
+

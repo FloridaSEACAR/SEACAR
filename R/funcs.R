@@ -46,17 +46,25 @@ scrptout <- function(fl){
     dplyr[...],
     here[...]
   )
-  
+
   tmp <- readLines(here(fl))
   tmp <- grep('^pdf|write\\.csv|^sink\\(', tmp, value = T)
   tmp <- tmp[!grepl('\\#', tmp)] # remove commented lines
 
   out <- sapply(tmp, function(x) x %>% strsplit('"') %>% .[[1]] %>% .[grepl('\\.pdf$|\\.csv$|\\.txt$', .)]) %>% 
-    unlist %>% 
-    paste(collapse = ', ')
+    unlist
   
-  if(nchar(out) == 0)
-    out <- 'none'
+  if(length(out) == 0){
+    return('none')
+  }
+
+  # hyperlink if files in output
+  outfls <- list.files(here('docs/output'))
+  fnd <- out %in% outfls
+  out[fnd] <- paste0('[', out[fnd], '](output/', out[fnd], ')')
+  
+  # concatenate
+  out <- paste(out, collapse = ', ')
   
   return(out)
   

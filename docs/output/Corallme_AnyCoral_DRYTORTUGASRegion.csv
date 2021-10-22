@@ -1,0 +1,26 @@
+$`DRY TORT`
+Linear mixed-effects model fit by REML
+ Data: subset(CorDRYTORTUGAS, Coral_Region == i) 
+       AIC      BIC    logLik
+  35222.87 35251.97 -17607.43
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+        (Intercept) Residual
+StdDev:    1.147819 1.207113
+
+Fixed effects: Perccov ~ Year 
+                 Value Std.Error    DF   t-value p-value
+(Intercept) -315.51190 20.311252 10255 -15.53385       0
+Year           0.15766  0.010092   414  15.62181       0
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-7.02457262 -0.16828758 -0.05962111 -0.01491126 24.40855320 
+
+Number of Observations: 10671
+Number of Groups: 416 
+

@@ -1,0 +1,684 @@
+$`Alligator Harbor Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 13.198, z (Trend) = 0.000, df = 11, p-value = 0.2806, p-value = 1.0000
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+-0.017304187  0.001428571  5.070744570 
+
+
+$`Apalachicola Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 7.4917, z (Trend) = 2.1575, df = 11, p-value = 0.75798, p-value = 0.03097
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.08961221   0.02427350 -49.11995929 
+
+
+$`Apalachicola National Estuarine Research Reserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 11.1244, z (Trend) = 2.4824, df = 11, p-value = 0.43290, p-value = 0.01305
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.10237399   0.02499209 -28.46512395 
+
+
+$`Banana River Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 5.2002, z (Trend) = -1.6256, df = 11, p-value = 0.9211, p-value = 0.1040
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.06402189 -0.01554772 47.96993372 
+
+
+$`Big Bend Seagrasses Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 8.6832, z (Trend) = 4.1168, df = 11, p-value = 0.6511, p-value = 3.842e-05
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.17347828   0.04752196 -58.11023997 
+
+
+$`Biscayne Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 10.6276, z (Trend) = 2.4379, df = 11, p-value = 0.47497, p-value = 0.01477
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.11345177   0.02503472 -22.19363532 
+
+
+$`Boca Ciega Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 18.938, z (Trend) = 3.498, df = 11, p-value = 0.0622129, p-value = 0.0004688
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.14479879   0.03910494 -72.70798896 
+
+
+$`Cape Haze Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 12.5944, z (Trend) = -1.1904, df = 11, p-value = 0.3207, p-value = 0.2339
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.05550661 -0.02606679 34.87141778 
+
+
+$`Cape Romano-Ten Thousand Islands Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 10.3196, z (Trend) = -0.2784, df = 11, p-value = 0.5019, p-value = 0.7807
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.01038557 -0.00307931 34.74736260 
+
+
+$`Cockroach Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 5.2565, z (Trend) = 0.4161, df = 11, p-value = 0.9181, p-value = 0.6773
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+       tau      slope  intercept 
+0.02157123 0.00597619 6.64939683 
+
+
+$`Coupon Bight Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 11.1294, z (Trend) = -1.4603, df = 11, p-value = 0.4325, p-value = 0.1442
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.10347366 -0.03637792 66.14248103 
+
+
+$`Estero Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 2.76800, z (Trend) = 0.60066, df = 11, p-value = 0.9935, p-value = 0.5481
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.04399029   0.02589848 -58.16724126 
+
+
+$`Florida Keys National Marine Sanctuary`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 11.3664, z (Trend) = 5.0107, df = 11, p-value = 0.4131, p-value = 5.423e-07
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.19330490   0.03322778 -30.19229152 
+
+
+$`Fort Pickens Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 10.790951, z (Trend) = 0.055793, df = 11, p-value = 0.4609, p-value = 0.9555
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+-0.004773605  0.000025000 75.035503125 
+
+
+$`Gasparilla Sound-Charlotte Harbor Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 7.438721, z (Trend) = 0.081319, df = 11, p-value = 0.7625, p-value = 0.9352
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+9.207112e-04 3.157784e-04 4.321265e+01 
+
+
+$`Guana River Marsh Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 13.643, z (Trend) = -1.118, df = 11, p-value = 0.2534, p-value = 0.2636
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.02797040 -0.03139626 48.32241201 
+
+
+$`Guana Tolomato Matanzas National Estuarine Research Reserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 6.77286, z (Trend) = -0.52614, df = 11, p-value = 0.8172, p-value = 0.5988
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.01706046 -0.01316477 38.93192976 
+
+
+$`Indian River-Malabar to Vero Beach Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 5.9418, z (Trend) = -1.5745, df = 11, p-value = 0.8772, p-value = 0.1154
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.06107777 -0.01769128 51.02837741 
+
+
+$`Indian River-Vero Beach to Ft. Pierce Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 4.3526, z (Trend) = -0.2901, df = 11, p-value = 0.9584, p-value = 0.7717
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+-0.016734798 -0.009898233 58.103183357 
+
+
+$`Jensen Beach to Jupiter Inlet Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 6.27571, z (Trend) = -0.75264, df = 11, p-value = 0.8543, p-value = 0.4517
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+-0.039534484 -0.008978175 37.806538462 
+
+
+$`Lemon Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 6.9078, z (Trend) = 1.5466, df = 11, p-value = 0.8065, p-value = 0.1220
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.06171173   0.01733289 -19.60144928 
+
+
+$`Loxahatchee River-Lake Worth Creek Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 9.6611, z (Trend) = 3.8040, df = 11, p-value = 0.5611018, p-value = 0.0001424
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+  0.1811665   0.0385662 -74.6418292 
+
+
+$`Matlacha Pass Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 6.2087, z (Trend) = 0.0000, df = 11, p-value = 0.8591, p-value = 1.0000
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+0.001472549 0.002465971 9.767051091 
+
+
+$`Mosquito Lagoon Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 11.3513, z (Trend) = 2.3952, df = 11, p-value = 0.41432, p-value = 0.01661
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+   0.1258315    0.0480000 -104.1629672 
+
+
+$`Nature Coast Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 14.2426, z (Trend) = 1.1739, df = 11, p-value = 0.2199, p-value = 0.2404
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.06603962   0.02307692 -78.58301768 
+
+
+$`Pine Island Sound Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 10.16619, z (Trend) = 0.38701, df = 11, p-value = 0.5155, p-value = 0.6987
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+ 0.01751948  0.00665625 21.38844563 
+
+
+$`Pinellas County Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 15.695, z (Trend) = 3.755, df = 11, p-value = 0.1528274, p-value = 0.0001733
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.14994612   0.03253157 -51.22619038 
+
+
+$`Rocky Bayou Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 14.56443, z (Trend) = 0.59184, df = 11, p-value = 0.2033, p-value = 0.5540
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.03055556   0.04630000 162.22148250 
+
+
+$`Rookery Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 8.0589, z (Trend) = 1.0869, df = 11, p-value = 0.7080, p-value = 0.2771
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.04518834   0.01660750 -20.20967316 
+
+
+$`Rookery Bay National Estuarine Research Reserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 8.15460, z (Trend) = 0.16022, df = 11, p-value = 0.6994, p-value = 0.8727
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+ 0.007442411  0.001084365 27.440809975 
+
+
+$`Southeast Florida Coral Reef Ecosystem Conservation Area`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 5.44587, z (Trend) = 0.10595, df = 11, p-value = 0.9077, p-value = 0.9156
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+-0.001260504  0.001957778 26.071664167 
+
+
+$`St. Andrews Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 5.11639, z (Trend) = 0.87811, df = 8, p-value = 0.7451, p-value = 0.3799
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+   0.1196078    0.0872549 -163.0355437 
+
+
+$`St. Joseph Bay Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 7.58784, z (Trend) = 0.97274, df = 11, p-value = 0.7497, p-value = 0.3307
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.06823740   0.02371878 -46.94129304 
+
+
+$`St. Martins Marsh Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 11.0907, z (Trend) = 1.7273, df = 11, p-value = 0.43570, p-value = 0.08412
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+         tau        slope    intercept 
+  0.08698058   0.03244589 -98.49030280 
+
+
+$`Terra Ceia Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 3.50178, z (Trend) = -0.43417, df = 11, p-value = 0.9823, p-value = 0.6642
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+        tau       slope   intercept 
+-0.01685775 -0.00549995 34.04644668 
+
+
+$`Yellow River Marsh Aquatic Preserve`
+
+	Seasonal Kendall Test for Trend (with continuity correction)
+
+data:  Temperaturemthyr
+Chi-Square (Het) = 10.55864, z (Trend) = 0.85262, df = 10, p-value = 0.3929, p-value = 0.3939
+alternative hypothesis: The seasonal taus are not all equal
+                                 (Chi-Square Heterogeneity Test)
+                                 At least one seasonal tau != 0
+                                 and all non-zero tau's have the
+                                 same sign (z Trend Test)
+null values:
+tau tau tau tau tau tau tau tau tau tau tau tau 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+sample estimates:
+       tau      slope  intercept 
+0.04224959 0.02440476 8.66046053 
+
+

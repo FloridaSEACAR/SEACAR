@@ -1,0 +1,26 @@
+$`FLA KEYS`
+Linear mixed-effects model fit by REML
+ Data: subset(CorFLKEYS, Coral_Region == i) 
+       AIC      BIC    logLik
+  184216.3 184252.5 -92104.17
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+        (Intercept) Residual
+StdDev:    1.284833 1.039342
+
+Fixed effects: Perccov ~ Year 
+                Value Std.Error    DF   t-value p-value
+(Intercept) -375.3268  12.95793 60652 -28.96504       0
+Year           0.1875   0.00645  1114  29.06174       0
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-10.52529818  -0.13509020  -0.06663912  -0.02541777  29.46716111 
+
+Number of Observations: 61768
+Number of Groups: 1116 
+

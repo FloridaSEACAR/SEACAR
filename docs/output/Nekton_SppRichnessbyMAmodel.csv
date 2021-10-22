@@ -1,0 +1,288 @@
+$`Banana River`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  193.3125 198.3448 -92.65623
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    3.493756 6.932707
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF    t-value p-value
+(Intercept) 290.61084  324.9762 26  0.8942527  0.3794
+Year         -0.11576    0.1622 26 -0.7137370  0.4817
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-2.0087547 -0.4664830  0.1101369  0.6233393  1.8250748 
+
+Number of Observations: 28
+Number of Groups: 1 
+
+$`Fort Clinch`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  148.4987 151.5891 -70.24937
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    9.170688 14.59047
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF   t-value p-value
+(Intercept) -3251.708 1176.2871 16 -2.764383  0.0138
+Year            1.650    0.5857 16  2.817472  0.0124
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-2.32715787 -0.58928666 -0.06223268  0.72426833  1.77125190 
+
+Number of Observations: 18
+Number of Groups: 1 
+
+$`Guana River Marsh`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  42.65223 39.04667 -17.32611
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    33.59348 28.16907
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF    t-value p-value
+(Intercept) -945.1778  5965.392  3 -0.1584435  0.8842
+Year           0.4889     2.969  3  0.1646489  0.8797
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        NE         NE         NE         NE         NE 
+-0.4291548  0.8164985  0.4796436  0.4449325 -1.3119198 
+attr(,"label")
+[1] "Standardized residuals"
+
+Number of Observations: 5
+Number of Groups: 1 
+
+$`Guana Tolomato Matanzas NERR`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  53.44779 50.99296 -22.72389
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    35.02255 32.17026
+
+Fixed effects: numspp ~ Year 
+               Value Std.Error DF    t-value p-value
+(Intercept) 803.1857  6691.061  4  0.1200386  0.9102
+Year         -0.3821     3.330  4 -0.1147597  0.9142
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.0474402 -0.7950998  0.1150686  0.7035945  1.0160226 
+
+Number of Observations: 6
+Number of Groups: 1 
+
+$`Indian River-Malabar to Vero Beach`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+      AIC      BIC   logLik
+  251.082 255.9575 -121.541
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    12.95744 25.24832
+
+Fixed effects: numspp ~ Year 
+                 Value Std.Error DF   t-value p-value
+(Intercept) -13020.933 1250.2586 25 -10.41459       0
+Year             6.559    0.6238 25  10.51421       0
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.3699659 -0.8694188 -0.0327234  0.6463194  1.7831834 
+
+Number of Observations: 27
+Number of Groups: 1 
+
+$`Indian River-Vero Beach to Ft. Pierce`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  176.1399 180.1228 -84.06993
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    7.182696 12.63369
+
+Fixed effects: numspp ~ Year 
+                 Value Std.Error DF   t-value p-value
+(Intercept) -1662.9641  830.6519 20 -2.001999  0.0590
+Year            0.8562    0.4140 20  2.068245  0.0518
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-3.1130811 -0.3356064  0.1616911  0.5877287  1.3091594 
+
+Number of Observations: 22
+Number of Groups: 1 
+
+$`Jensen Beach to Jupiter Inlet`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  289.3464 293.7106 -140.6732
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    62.41547 114.6645
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF   t-value p-value
+(Intercept) -31984.53  6653.295 22 -4.807322   1e-04
+Year            16.03     3.316 22  4.832928   1e-04
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-2.22693348 -0.74198288  0.06162256  0.58668333  1.50635374 
+
+Number of Observations: 24
+Number of Groups: 1 
+
+$`Loxahatchee River-Lake Worth Creek`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  122.2907 122.6085 -57.14537
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    155.9162 184.8939
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF   t-value p-value
+(Intercept) -39631.93 20796.315  8 -1.905719  0.0931
+Year            19.83    10.334  8  1.918562  0.0913
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.5359435 -0.8212923  0.4472630  0.6900215  0.7760896 
+
+Number of Observations: 10
+Number of Groups: 1 
+
+$`Mosquito Lagoon`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  57.10098 56.26802 -24.55049
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    7.771426 8.242842
+
+Fixed effects: numspp ~ Year 
+                 Value Std.Error DF    t-value p-value
+(Intercept) -1204.9444 1595.0821  6 -0.7554122  0.4786
+Year            0.6111    0.7932  6  0.7704688  0.4703
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.69170347 -0.42966572 -0.02358949  0.52402368  1.24013322 
+
+Number of Observations: 8
+Number of Groups: 1 
+
+$`Nassau River-St. Johns River Marshes`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  160.7673 163.8577 -76.38365
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    13.47471 21.43816
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF   t-value p-value
+(Intercept) -5122.930 1767.8505 16 -2.897830  0.0105
+Year            2.609    0.8803 16  2.964299  0.0091
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-3.0241040 -0.4252672  0.2060962  0.6392149  1.0683270 
+
+Number of Observations: 18
+Number of Groups: 1 
+
+$`North Fork St. Lucie`
+Linear mixed-effects model fit by REML
+ Data: subset(spprichness, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  166.4099 169.9714 -79.20494
+
+Random effects:
+ Formula: ~1 | Region
+        (Intercept) Residual
+StdDev:    9.029778  15.1435
+
+Fixed effects: numspp ~ Year 
+                Value Std.Error DF   t-value p-value
+(Intercept) -4056.870 1178.9232 18 -3.441166  0.0029
+Year            2.038    0.5872 18  3.469782  0.0027
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.6381133 -0.8553759  0.0986552  0.6490291  1.9838782 
+
+Number of Observations: 20
+Number of Groups: 1 
+

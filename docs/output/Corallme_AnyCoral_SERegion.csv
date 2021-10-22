@@ -1,0 +1,26 @@
+$`SE FL`
+Linear mixed-effects model fit by REML
+ Data: subset(CorSE, Coral_Region == i) 
+       AIC      BIC    logLik
+  5714.642 5736.034 -2853.321
+
+Random effects:
+ Formula: ~1 | ProgramLocationID
+        (Intercept) Residual
+StdDev:    1.785406  1.36119
+
+Fixed effects: Perccov ~ Year 
+                Value Std.Error   DF   t-value p-value
+(Intercept) -88.31201  43.19502 1371 -2.044495  0.0411
+Year          0.04484   0.02144 1371  2.091019  0.0367
+ Correlation: 
+     (Intr)
+Year -1    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-4.68338049 -0.07972521 -0.01363664  0.02830285 12.21359928 
+
+Number of Observations: 1555
+Number of Groups: 183 
+

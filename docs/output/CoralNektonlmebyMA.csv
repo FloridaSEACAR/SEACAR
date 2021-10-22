@@ -1,0 +1,52 @@
+$`Coral ECA`
+Linear mixed-effects model fit by REML
+ Data: subset(df, ManagedAreaName == i) 
+       AIC      BIC    logLik
+  78.97459 78.75823 -35.48729
+
+Random effects:
+ Formula: ~1 | Year
+        (Intercept) Residual
+StdDev:    26.33612 9.876039
+
+Fixed effects: GenericRichness ~ MeanPercCov 
+               Value Std.Error DF  t-value p-value
+(Intercept) 82.48954  12.09565  7 6.819769  0.0002
+MeanPercCov 19.56648   9.37198  7 2.087764  0.0752
+ Correlation: 
+            (Intr)
+MeanPercCov -0.632
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-0.41806679 -0.28074825 -0.03695512  0.23223686  0.45577846 
+
+Number of Observations: 9
+Number of Groups: 9 
+
+$`Florida Keys NMS`
+Linear mixed-effects model fit by REML
+ Data: subset(df, ManagedAreaName == i) 
+      AIC      BIC   logLik
+  101.443 102.2319 -46.7215
+
+Random effects:
+ Formula: ~1 | Year
+        (Intercept) Residual
+StdDev:    30.23734   11.339
+
+Fixed effects: GenericRichness ~ MeanPercCov 
+                Value Std.Error DF   t-value p-value
+(Intercept) 121.27712 12.666405  9  9.574708  0.0000
+MeanPercCov -12.72921  7.363647  9 -1.728655  0.1179
+ Correlation: 
+            (Intr)
+MeanPercCov -0.64 
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-0.86886632 -0.04414738  0.03385767  0.08448190  0.42692514 
+
+Number of Observations: 11
+Number of Groups: 11 
+
