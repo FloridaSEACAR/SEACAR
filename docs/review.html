@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR code review</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-10-29 08:31:24</h4>
+<h4 class="date">2021-10-29 13:13:22</h4>
 
 </div>
 
@@ -259,7 +259,7 @@ div.tocify {
 <div id="water-column" class="section level2" number="2.1">
 <h2 number="2.1"><span class="header-section-number">2.1</span> Water column</h2>
 <div id="scripts" class="section level3 unnumbered">
-<h3 class="unnumbered">Scripts:</h3>
+<h3 class="unnumbered">Scripts</h3>
 <table>
 <thead>
 <tr class="header">
@@ -328,7 +328,7 @@ div.tocify {
 </table>
 </div>
 <div id="summaries" class="section level3 unnumbered">
-<h3 class="unnumbered">Summaries:</h3>
+<h3 class="unnumbered">Summaries</h3>
 <ol style="list-style-type: decimal">
 <li>2021.08.21_FINAL_SEACAR Water_Nutrients_Phosphorus_FINAL.R
 <ul>
@@ -337,16 +337,16 @@ div.tocify {
 <li>File inputs: Nutrients - Nitrogen and Phosphorus-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 52: load libraries and import phosphorus and regions datasets</li>
-<li>Lines 53 - 187: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
-<li>Lines 188 - 206: boxplot summaries of surface phosphorus by year, year/month for complete dataset</li>
-<li>Lines 208 - 222: boxplot summaries of surface phosphorus by year/month, separate for managed areas</li>
-<li>Lines 223 - 239: boxplot summaries of surface phosphorus by year, separate for managed areas</li>
-<li>Lines 240 - 264: average phosphorus by year, month, managed area to prep for trend test</li>
-<li>Lines 265 - 322: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 323 - 349: plots of average year, month phosphorus, separate for managed areas</li>
-<li>Lines 350 - 368: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 369 - 440: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 52: load libraries and import phosphorus and regions datasets</li>
+<li>53 - 187: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
+<li>188 - 206: boxplot summaries of surface phosphorus by year, year/month for complete dataset</li>
+<li>208 - 222: boxplot summaries of surface phosphorus by year/month, separate for managed areas</li>
+<li>223 - 239: boxplot summaries of surface phosphorus by year, separate for managed areas</li>
+<li>240 - 264: average phosphorus by year, month, managed area to prep for trend test</li>
+<li>265 - 322: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>323 - 349: plots of average year, month phosphorus, separate for managed areas</li>
+<li>350 - 368: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>369 - 440: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_P_MA_surf_MonthlyBoxplots.pdf" target="_blank">Nutrients_P_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_P_MA_surf_AnnualBoxplots.pdf" target="_blank">Nutrients_P_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Nutrients_P_MA_surf_plots.pdf" target="_blank">2Nutrients_P_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_P_MA_surf_KToutput.csv" target="_blank">Nutrients_P_MA_surf_KToutput.csv</a>, Nutrients_P_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -364,16 +364,16 @@ div.tocify {
 <li>File inputs: CDOM and FDOM-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import CDOM and regions datasets</li>
-<li>Lines 50 - 186: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
-<li>Lines 187 - 205: boxplot summaries of surface CDOM by year, year/month for complete dataset</li>
-<li>Lines 206 - 216: boxplot summaries of surface CDOM by year/month, separate for managed areas</li>
-<li>Lines 217 - 238: boxplot summaries of surface CDOM by year, separate for managed areas</li>
-<li>Lines 239 - 262: average CDOM by year, month, managed area to prep for trend test</li>
-<li>Lines 263 - 320: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 321 - 347: plots of average year, month CDOM, separate for managed areas</li>
-<li>Lines 350 - 366: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 367 - 438: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import CDOM and regions datasets</li>
+<li>50 - 186: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
+<li>187 - 205: boxplot summaries of surface CDOM by year, year/month for complete dataset</li>
+<li>206 - 216: boxplot summaries of surface CDOM by year/month, separate for managed areas</li>
+<li>217 - 238: boxplot summaries of surface CDOM by year, separate for managed areas</li>
+<li>239 - 262: average CDOM by year, month, managed area to prep for trend test</li>
+<li>263 - 320: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>321 - 347: plots of average year, month CDOM, separate for managed areas</li>
+<li>350 - 366: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>367 - 438: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_CDOM_MA_surf_MonthlyBoxplots.pdf" target="_blank">Clarity_CDOM_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_CDOM_MA_surf_AnnualBoxplots.pdf" target="_blank">Clarity_CDOM_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Clarity_CDOM_MA_surf_plots.pdf" target="_blank">2Clarity_CDOM_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_CDOM_MA_surf_KToutput.csv" target="_blank">Clarity_CDOM_MA_surf_KToutput.csv</a>, Clarity_CDOM_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -393,16 +393,16 @@ div.tocify {
 <li>File inputs: Chlorophyll-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import chlorophyll and regions datasets</li>
-<li>Lines 50 - 185: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
-<li>Lines 186 - 205: boxplot summaries of surface chlorophyll by year, year/month for complete dataset</li>
-<li>Lines 206 - 220: boxplot summaries of surface chlorophyll by year/month, separate for managed areas</li>
-<li>Lines 221 - 237: boxplot summaries of surface chlorophyll by year, separate for managed areas</li>
-<li>Lines 238 - 261: average chlorophyll by year, month, managed area to prep for trend test</li>
-<li>Lines 262 - 319: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 320 - 346: plots of average year, month chlorophyll, separate for managed areas</li>
-<li>Lines 347 - 365: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 366 - 437: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import chlorophyll and regions datasets</li>
+<li>50 - 185: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
+<li>186 - 205: boxplot summaries of surface chlorophyll by year, year/month for complete dataset</li>
+<li>206 - 220: boxplot summaries of surface chlorophyll by year/month, separate for managed areas</li>
+<li>221 - 237: boxplot summaries of surface chlorophyll by year, separate for managed areas</li>
+<li>238 - 261: average chlorophyll by year, month, managed area to prep for trend test</li>
+<li>262 - 319: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>320 - 346: plots of average year, month chlorophyll, separate for managed areas</li>
+<li>347 - 365: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>366 - 437: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_chla_MA_surf_MonthlyBoxplots.pdf" target="_blank">Clarity_chla_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_chla_MA_surf_AnnualBoxplots.pdf" target="_blank">Clarity_chla_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Clarity_chla_MA_surf_plots.pdf" target="_blank">2Clarity_chla_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_chla_MA_surf_KToutput.csv" target="_blank">Clarity_chla_MA_surf_KToutput.csv</a>, Clarity_chla_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -419,16 +419,16 @@ div.tocify {
 <li>File inputs: Turbidity and TSS-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 50: load libraries and import turbidity and regions datasets</li>
-<li>Lines 51 - 186: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
-<li>Lines 187 - 205: boxplot summaries of surface turbidity by year, year/month for complete dataset</li>
-<li>Lines 206 - 221: boxplot summaries of surface turbidity by year/month, separate for managed areas</li>
-<li>Lines 222 - 238: boxplot summaries of surface turbidity by year, separate for managed areas</li>
-<li>Lines 239 - 262: average turbidity by year, month, managed area to prep for trend test</li>
-<li>Lines 263 - 320: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 321 - 347: plots of average year, month turbidity, separate for managed areas</li>
-<li>Lines 348 - 366: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 367 - 438: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 50: load libraries and import turbidity and regions datasets</li>
+<li>51 - 186: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates.</li>
+<li>187 - 205: boxplot summaries of surface turbidity by year, year/month for complete dataset</li>
+<li>206 - 221: boxplot summaries of surface turbidity by year/month, separate for managed areas</li>
+<li>222 - 238: boxplot summaries of surface turbidity by year, separate for managed areas</li>
+<li>239 - 262: average turbidity by year, month, managed area to prep for trend test</li>
+<li>263 - 320: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>321 - 347: plots of average year, month turbidity, separate for managed areas</li>
+<li>348 - 366: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>367 - 438: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_Turbidity_MA_surf_MonthlyBoxplots.pdf" target="_blank">Clarity_Turbidity_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_Turbidity_MA_surf_AnnualBoxplots.pdf" target="_blank">Clarity_Turbidity_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Clarity_Turbidity_MA_surf_plots.pdf" target="_blank">2Clarity_Turbidity_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Clarity_Turbidity_MA_surf_KToutput.csv" target="_blank">Clarity_Turbidity_MA_surf_KToutput.csv</a>, Clarity_Turbidity_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -445,16 +445,16 @@ div.tocify {
 <li>File inputs: Nitrogen-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 48: load libraries and import nitrogen and regions datasets</li>
-<li>Lines 49 - 219: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates. Creates TN as sum of TKN and NOx. Values less than zero are flagged as 999999999, which is different from the other water quality variables.</li>
-<li>Lines 220 - 239: boxplot summaries of surface nitrogen by year, year/month for complete dataset</li>
-<li>Lines 240 - 255: boxplot summaries of surface nitrogen by year/month, separate for managed areas</li>
-<li>Lines 256 - 272: boxplot summaries of surface nitrogen by year, separate for managed areas</li>
-<li>Lines 273 - 296: average nitrogen by year, month, managed area to prep for trend test</li>
-<li>Lines 297 - 354: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 355 - 381: plots of average year, month nitrogen, separate for managed areas</li>
-<li>Lines 382 - 400: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 401 - 472: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 48: load libraries and import nitrogen and regions datasets</li>
+<li>49 - 219: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data). NA values are removed for water quality measurements and dates. Creates TN as sum of TKN and NOx. Values less than zero are flagged as 999999999, which is different from the other water quality variables.</li>
+<li>220 - 239: boxplot summaries of surface nitrogen by year, year/month for complete dataset</li>
+<li>240 - 255: boxplot summaries of surface nitrogen by year/month, separate for managed areas</li>
+<li>256 - 272: boxplot summaries of surface nitrogen by year, separate for managed areas</li>
+<li>273 - 296: average nitrogen by year, month, managed area to prep for trend test</li>
+<li>297 - 354: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>355 - 381: plots of average year, month nitrogen, separate for managed areas</li>
+<li>382 - 400: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>401 - 472: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_N_MA_surf_MonthlyBoxplots.pdf" target="_blank">Nutrients_N_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_N_MA_surf_AnnualBoxplots.pdf" target="_blank">Nutrients_N_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Nutrients_N_MA_surf_plots.pdf" target="_blank">2Nutrients_N_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_N_MA_surf_KToutput.csv" target="_blank">Nutrients_N_MA_surf_KToutput.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nutrients_N_MA_surf_resultssummarystats2.csv" target="_blank">Nutrients_N_MA_surf_resultssummarystats2.csv</a></li>
 <li>Potential issues:
@@ -473,16 +473,16 @@ div.tocify {
 <li>File inputs: Dissolved Oxygen-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import dissolved oxygen saturation and regions datasets</li>
-<li>Lines 50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
-<li>Lines 194 - 212: boxplot summaries of surface dissolved oxygen saturation by year, year/month for complete dataset</li>
-<li>Lines 213 - 228: boxplot summaries of surface dissolved oxygen saturation by year/month, separate for managed areas</li>
-<li>Lines 229 - 245: boxplot summaries of surface dissolved oxygen saturation by year, separate for managed areas</li>
-<li>Lines 246 - 269: average dissolved oxygen saturation by year, month, managed area to prep for trend test</li>
-<li>Lines 270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 328 - 354: plots of average year, month dissolved oxygen saturation, separate for managed areas</li>
-<li>Lines 355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import dissolved oxygen saturation and regions datasets</li>
+<li>50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
+<li>194 - 212: boxplot summaries of surface dissolved oxygen saturation by year, year/month for complete dataset</li>
+<li>213 - 228: boxplot summaries of surface dissolved oxygen saturation by year/month, separate for managed areas</li>
+<li>229 - 245: boxplot summaries of surface dissolved oxygen saturation by year, separate for managed areas</li>
+<li>246 - 269: average dissolved oxygen saturation by year, month, managed area to prep for trend test</li>
+<li>270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>328 - 354: plots of average year, month dissolved oxygen saturation, separate for managed areas</li>
+<li>355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_DOsat_MA_surf_MonthlyBoxplots.pdf" target="_blank">Quality_DOsat_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_DOsat_MA_surf_AnnualBoxplots.pdf" target="_blank">Quality_DOsat_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Quality_DOsat_MA_surf_plots.pdf" target="_blank">2Quality_DOsat_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_DOsat_MA_surf_KToutput.csv" target="_blank">Quality_DOsat_MA_surf_KToutput.csv</a>, Quality_DOsat_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -498,16 +498,16 @@ div.tocify {
 <li>File inputs: Dissolved Oxygen-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import dissolved oxygen concentration and regions datasets</li>
-<li>Lines 50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
-<li>Lines 194 - 212: boxplot summaries of surface dissolved oxygen concentration by year, year/month for complete dataset</li>
-<li>Lines 213 - 228: boxplot summaries of surface dissolved oxygen concentration by year/month, separate for managed areas</li>
-<li>Lines 229 - 245: boxplot summaries of surface dissolved oxygen concentration by year, separate for managed areas</li>
-<li>Lines 246 - 269: average dissolved oxygen concentration by year, month, managed area to prep for trend test</li>
-<li>Lines 270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 328 - 354: plots of average year, month dissolved oxygen concentration, separate for managed areas</li>
-<li>Lines 355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import dissolved oxygen concentration and regions datasets</li>
+<li>50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
+<li>194 - 212: boxplot summaries of surface dissolved oxygen concentration by year, year/month for complete dataset</li>
+<li>213 - 228: boxplot summaries of surface dissolved oxygen concentration by year/month, separate for managed areas</li>
+<li>229 - 245: boxplot summaries of surface dissolved oxygen concentration by year, separate for managed areas</li>
+<li>246 - 269: average dissolved oxygen concentration by year, month, managed area to prep for trend test</li>
+<li>270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>328 - 354: plots of average year, month dissolved oxygen concentration, separate for managed areas</li>
+<li>355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_DOmgL_MA_surf_MonthlyBoxplots.pdf" target="_blank">Quality_DOmgL_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_DOmgL_MA_surf_AnnualBoxplots.pdf" target="_blank">Quality_DOmgL_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Quality_DOmgL_MA_surf_plots.pdf" target="_blank">2Quality_DOmgL_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_DOmgL_MA_surf_KToutput.csv" target="_blank">Quality_DOmgL_MA_surf_KToutput.csv</a>, Quality_DOmgL_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -523,16 +523,16 @@ div.tocify {
 <li>File inputs: Water Temperature and pH-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import pH and regions datasets</li>
-<li>Lines 50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
-<li>Lines 194 - 212: boxplot summaries of surface pH by year, year/month for complete dataset</li>
-<li>Lines 213 - 228: boxplot summaries of surface pH by year/month, separate for managed areas</li>
-<li>Lines 229 - 245: boxplot summaries of surface pH by year, separate for managed areas</li>
-<li>Lines 246 - 269: average pH by year, month, managed area to prep for trend test</li>
-<li>Lines 270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 328 - 354: plots of average year, month pH, separate for managed areas</li>
-<li>Lines 355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import pH and regions datasets</li>
+<li>50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
+<li>194 - 212: boxplot summaries of surface pH by year, year/month for complete dataset</li>
+<li>213 - 228: boxplot summaries of surface pH by year/month, separate for managed areas</li>
+<li>229 - 245: boxplot summaries of surface pH by year, separate for managed areas</li>
+<li>246 - 269: average pH by year, month, managed area to prep for trend test</li>
+<li>270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>328 - 354: plots of average year, month pH, separate for managed areas</li>
+<li>355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_pH_MA_surf_MonthlyBoxplots.pdf" target="_blank">Quality_pH_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_pH_MA_surf_AnnualBoxplots.pdf" target="_blank">Quality_pH_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Quality_pH_MA_surf_plots.pdf" target="_blank">2Quality_pH_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_pH_MA_surf_KToutput.csv" target="_blank">Quality_pH_MA_surf_KToutput.csv</a>, Quality_pH_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -550,16 +550,16 @@ div.tocify {
 <li>File inputs: Salinity and Specific Conductivity-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import salinity and regions datasets</li>
-<li>Lines 50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
-<li>Lines 194 - 212: boxplot summaries of surface salinity by year, year/month for complete dataset</li>
-<li>Lines 213 - 228: boxplot summaries of surface salinity by year/month, separate for managed areas</li>
-<li>Lines 229 - 245: boxplot summaries of surface salinity by year, separate for managed areas</li>
-<li>Lines 246 - 269: average salinity by year, month, managed area to prep for trend test</li>
-<li>Lines 270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 328 - 354: plots of average year, month salinity, separate for managed areas</li>
-<li>Lines 355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import salinity and regions datasets</li>
+<li>50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
+<li>194 - 212: boxplot summaries of surface salinity by year, year/month for complete dataset</li>
+<li>213 - 228: boxplot summaries of surface salinity by year/month, separate for managed areas</li>
+<li>229 - 245: boxplot summaries of surface salinity by year, separate for managed areas</li>
+<li>246 - 269: average salinity by year, month, managed area to prep for trend test</li>
+<li>270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>328 - 354: plots of average year, month salinity, separate for managed areas</li>
+<li>355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_Salinity_MA_surf_MonthlyBoxplots.pdf" target="_blank">Quality_Salinity_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_Salinity_MA_surf_AnnualBoxplots.pdf" target="_blank">Quality_Salinity_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Quality_Salinity_MA_surf_plots.pdf" target="_blank">2Quality_Salinity_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_Salinity_MA_surf_KToutput.csv" target="_blank">Quality_Salinity_MA_surf_KToutput.csv</a>, Quality_Salinity_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -575,16 +575,16 @@ div.tocify {
 <li>File inputs: Water Temperature and pH-2021-Jul-26.csv, SEACARMARegionList.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 49: load libraries and import temperature and regions datasets</li>
-<li>Lines 50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
-<li>Lines 194 - 212: boxplot summaries of surface temperature by year, year/month for complete dataset</li>
-<li>Lines 213 - 228: boxplot summaries of surface temperature by year/month, separate for managed areas</li>
-<li>Lines 229 - 245: boxplot summaries of surface temperature by year, separate for managed areas</li>
-<li>Lines 246 - 269: average temperature by year, month, managed area to prep for trend test</li>
-<li>Lines 270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
-<li>Lines 328 - 354: plots of average year, month temperature, separate for managed areas</li>
-<li>Lines 355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
-<li>Lines 374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
+<li>1 - 49: load libraries and import temperature and regions datasets</li>
+<li>50 - 193: Format data for analysis, including removal of NA values, conversion of date column to date objects, and removing entries with flagged QA codes (from WIN and NERRS data)</li>
+<li>194 - 212: boxplot summaries of surface temperature by year, year/month for complete dataset</li>
+<li>213 - 228: boxplot summaries of surface temperature by year/month, separate for managed areas</li>
+<li>229 - 245: boxplot summaries of surface temperature by year, separate for managed areas</li>
+<li>246 - 269: average temperature by year, month, managed area to prep for trend test</li>
+<li>270 - 327: identify number of unique years in each dataset, remove those with &lt; 10</li>
+<li>328 - 354: plots of average year, month temperature, separate for managed areas</li>
+<li>355 - 373: run trend tests, first on a “test” site then for all, results saved as raw output from the trend test</li>
+<li>374 - 445: format all trend tests in a simple table, combine with region names, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_Temperature_MA_surf_MonthlyBoxplots.pdf" target="_blank">Quality_Temperature_MA_surf_MonthlyBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_Temperature_MA_surf_AnnualBoxplots.pdf" target="_blank">Quality_Temperature_MA_surf_AnnualBoxplots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/2Quality_Temperature_MA_surf_plots.pdf" target="_blank">2Quality_Temperature_MA_surf_plots.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Quality_Temperature_MA_surf_KToutput.csv" target="_blank">Quality_Temperature_MA_surf_KToutput.csv</a>, Quality_Temperature_MA_surf_resultssummarystats2.csv</li>
 <li>Potential issues:
@@ -601,15 +601,15 @@ div.tocify {
 <li>File inputs: Nekton_NE-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 19: load libraries and import nekton data</li>
-<li>Lines 20 - 30: combine genus, species columns as one, remove any rows with missing genus or management area names</li>
-<li>Lines 31 - 52: calculate richness metrics management area, region, year</li>
-<li>Lines 53 - 69: identify number of unique years in each dataset, remove those with &lt; 5</li>
-<li>Lines 70 - 86: create linear mixed models evaluating richness vs year, using a random region effect</li>
-<li>Lines 87 - 113: create plot of richness vs year by management area using model output</li>
-<li>Lines 114 - 141: tabular summary of richness vs year by management area</li>
-<li>Lines 142 - 166: tabular summary of richness vs year by management area, similar info as previous table</li>
-<li>Lines 167 - 200: join results from the previous two tables, save output as csv</li>
+<li>1 - 19: load libraries and import nekton data</li>
+<li>20 - 30: combine genus, species columns as one, remove any rows with missing genus or management area names</li>
+<li>31 - 52: calculate richness metrics management area, region, year</li>
+<li>53 - 69: identify number of unique years in each dataset, remove those with &lt; 5</li>
+<li>70 - 86: create linear mixed models evaluating richness vs year, using a random region effect</li>
+<li>87 - 113: create plot of richness vs year by management area using model output</li>
+<li>114 - 141: tabular summary of richness vs year by management area</li>
+<li>142 - 166: tabular summary of richness vs year by management area, similar info as previous table</li>
+<li>167 - 200: join results from the previous two tables, save output as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nekton_SppRichnessbyMAmodel.csv" target="_blank">Nekton_SppRichnessbyMAmodel.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Nekton_SppRichnessbyMAmodelPlot.pdf" target="_blank">Nekton_SppRichnessbyMAmodelPlot.pdf</a>, Nekton_SppRichnessbyMAmodelTable.pdf.csv</li>
 <li>Potential issues:
@@ -626,7 +626,7 @@ div.tocify {
 <div id="coral-reef" class="section level2" number="2.2">
 <h2 number="2.2"><span class="header-section-number">2.2</span> Coral reef</h2>
 <div id="scripts-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Scripts:</h3>
+<h3 class="unnumbered">Scripts</h3>
 <table>
 <thead>
 <tr class="header">
@@ -690,7 +690,7 @@ div.tocify {
 </table>
 </div>
 <div id="summaries-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Summaries:</h3>
+<h3 class="unnumbered">Summaries</h3>
 <ol style="list-style-type: decimal">
 <li>2021.09.19_CoralNektonRichness_FINAL.R
 <ul>
@@ -699,13 +699,13 @@ div.tocify {
 <li>File inputs: CorSE.csv, CorFLKeys.csv, CorDryTortugas.csv, Nekton2.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 43: import coral data for each region (Dry Tortugas, Florida Keys, SE Florida), filter by managed area names, combine all into one object</li>
-<li>Lines 44 - 65: import nekton data, filter by grazers and reef dependent species</li>
-<li>Lines 66 - 90: estimate nekton richness by managed area, year, estimate coral percent cover by managed area, year, combine into one dataset</li>
-<li>Lines 91 - 103: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, output as csv</li>
-<li>Lines 104 - 124: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, separate models by managed area, output as csv</li>
-<li>Lines 125 - 149: create plots of nekton richness vs coral percent cover from model output, save as pdf</li>
-<li>Lines 150 - 236: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 43: import coral data for each region (Dry Tortugas, Florida Keys, SE Florida), filter by managed area names, combine all into one object</li>
+<li>44 - 65: import nekton data, filter by grazers and reef dependent species</li>
+<li>66 - 90: estimate nekton richness by managed area, year, estimate coral percent cover by managed area, year, combine into one dataset</li>
+<li>91 - 103: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, output as csv</li>
+<li>104 - 124: create linear mixed effects model of nekton richness by mean percent coral cover, year as random effect, separate models by managed area, output as csv</li>
+<li>125 - 149: create plots of nekton richness vs coral percent cover from model output, save as pdf</li>
+<li>150 - 236: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralNektonlmeSERegion.csv" target="_blank">CoralNektonlmeSERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralNektonlmebyMA.csv" target="_blank">CoralNektonlmebyMA.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/NektonCoral_SppRichnessbyMAmodelPlot.pdf" target="_blank">NektonCoral_SppRichnessbyMAmodelPlot.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/NektonCoral_SppRichnessbyMAmodelTable.csv" target="_blank">NektonCoral_SppRichnessbyMAmodelTable.csv</a></li>
 <li>Potential issues:
@@ -720,20 +720,20 @@ div.tocify {
 <li>File inputs: Percent Cover - DRY TORT-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 20: load libraries and import percent cover data for Dry Tortugas</li>
-<li>Lines 21 - 79: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 80 - 101: create a summary table for percent cover statistics by year, region across all species, save output</li>
-<li>Lines 102 - 112: create linear model year vs percent cover, save model summary plots to pdf</li>
-<li>Lines 113 - 128: create boxplots of percent cover for any coral by year, save as pdf</li>
-<li>Lines 129 - 145: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
-<li>Lines 146 - 179: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
-<li>Lines 180 - 202: plot model output as estimated linear trend across years by coral region, save as pdf</li>
-<li>Lines 203 - 301: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 20: load libraries and import percent cover data for Dry Tortugas</li>
+<li>21 - 79: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>80 - 101: create a summary table for percent cover statistics by year, region across all species, save output</li>
+<li>102 - 112: create linear model year vs percent cover, save model summary plots to pdf</li>
+<li>113 - 128: create boxplots of percent cover for any coral by year, save as pdf</li>
+<li>129 - 145: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
+<li>146 - 179: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
+<li>180 - 202: plot model output as estimated linear trend across years by coral region, save as pdf</li>
+<li>203 - 301: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_AnyCoral_DRYTORTUGASRegion.csv" target="_blank">CoralSummaryStatisticsTable_AnyCoral_DRYTORTUGASRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsPlots_AnyCoral_DRYTORTUGASRegion.pdf" target="_blank">CoralSummaryStatisticsPlots_AnyCoral_DRYTORTUGASRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_AnyCoral_DRYTORTUGASRegion.pdf" target="_blank">CoralBoxplots_AnyCoral_DRYTORTUGASRegion.pdf</a>, CorDryTortugas.csv, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_AnyCoral_DRYTORTUGASRegion.csv" target="_blank">Corallme_AnyCoral_DRYTORTUGASRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_AnyCoral_DRYTORTUGASRegion.pdf" target="_blank">CorallmePlot_AnyCoral_DRYTORTUGASRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_AnyCoral_DRYTORTUGASRegion.csv" target="_blank">Coral_lmeResults_AnyCoral_DRYTORTUGASRegion.csv</a></li>
 <li>Potential issues:
 <ul>
-<li>Lines 106, 109: Year is dependent variable in the linear model, it should be the independent variable.</li>
+<li>106, 109: Year is dependent variable in the linear model, it should be the independent variable.</li>
 <li>Model results are separate for each coral region, yet the file includes only one region (Dry Tortugas). This does not create incorrect output, but the intention is unclear.</li>
 </ul></li>
 </ul></li>
@@ -744,15 +744,15 @@ div.tocify {
 <li>File inputs: Percent Cover - DRY TORT-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 18: load libraries and import percent cover data for Dry Tortugas</li>
-<li>Lines 19 - 83: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 84 - 103: create a summary table for percent cover statistics by year, genus, region, save output</li>
-<li>Lines 104 - 110: create linear model year vs percent cover, not separated by genus</li>
-<li>Lines 111 - 125: create boxplots of percent cover by genus, year, save as pdf</li>
-<li>Lines 126 - 161: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID. No output created because no genus meets the minimum year requirement.</li>
-<li>Lines 162 - 184: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv. No output created because no genus meets the minimum year requirement.</li>
-<li>Lines 185 - 210: plot model output as estimated linear trend across years by genus, save as pdf. No output created because no genus meets the minimum year requirement.</li>
-<li>Lines 211 - 309: format and summarize model output to create summary table of model fit, saved as csv. No output created because no genus meets the minimum year requirement.</li>
+<li>1 - 18: load libraries and import percent cover data for Dry Tortugas</li>
+<li>19 - 83: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>84 - 103: create a summary table for percent cover statistics by year, genus, region, save output</li>
+<li>104 - 110: create linear model year vs percent cover, not separated by genus</li>
+<li>111 - 125: create boxplots of percent cover by genus, year, save as pdf</li>
+<li>126 - 161: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID. No output created because no genus meets the minimum year requirement.</li>
+<li>162 - 184: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv. No output created because no genus meets the minimum year requirement.</li>
+<li>185 - 210: plot model output as estimated linear trend across years by genus, save as pdf. No output created because no genus meets the minimum year requirement.</li>
+<li>211 - 309: format and summarize model output to create summary table of model fit, saved as csv. No output created because no genus meets the minimum year requirement.</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_Genus_DRYRegion.csv" target="_blank">CoralSummaryStatisticsTable_Genus_DRYRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_ByGenus_DRYRegion.pdf" target="_blank">CoralBoxplots_ByGenus_DRYRegion.pdf</a>, Corallme_ByGenus_DRYRegion.csv, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_ByGenus_DRYRegion.pdf" target="_blank">CorallmePlot_ByGenus_DRYRegion.pdf</a>, Coral_lmeResults_ByGenus_DRYRegion.csv</li>
 <li>Potential issues:
@@ -768,14 +768,14 @@ div.tocify {
 <li>File inputs: Percent Cover - DRY TORT-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 17: load libraries and import percent cover data for Dry Tortugas</li>
-<li>Lines 18 - 81: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 82 - 101: create a summary table for percent cover statistics by year, species group, region, save output</li>
-<li>Lines 102 - 107: create linear model year vs percent cover, not separated by species group</li>
-<li>Lines 108 - 122: create boxplots of percent cover by species group, year, save as pdf</li>
-<li>Lines 123 - 158: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv</li>
-<li>Lines 159 - 181: plot model output as estimated linear trend across years by species group, save as pdf</li>
-<li>Lines 182 - 280: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 17: load libraries and import percent cover data for Dry Tortugas</li>
+<li>18 - 81: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>82 - 101: create a summary table for percent cover statistics by year, species group, region, save output</li>
+<li>102 - 107: create linear model year vs percent cover, not separated by species group</li>
+<li>108 - 122: create boxplots of percent cover by species group, year, save as pdf</li>
+<li>123 - 158: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv</li>
+<li>159 - 181: plot model output as estimated linear trend across years by species group, save as pdf</li>
+<li>182 - 280: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_Group1_DryTortugasRegion.csv" target="_blank">CoralSummaryStatisticsTable_Group1_DryTortugasRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_ByGroup1_DRYRegion.pdf" target="_blank">CoralBoxplots_ByGroup1_DRYRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_ByGroup1_DRYRegion.csv" target="_blank">Corallme_ByGroup1_DRYRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_ByGroup1_DRYRegion.pdf" target="_blank">CorallmePlot_ByGroup1_DRYRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_ByGroup1_DryTortugasRegion.csv" target="_blank">Coral_lmeResults_ByGroup1_DryTortugasRegion.csv</a></li>
 <li>Potential issues:
@@ -790,20 +790,20 @@ div.tocify {
 <li>File inputs: Percent Cover - FLA KEYS-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 20: load libraries and import percent cover data for Florida Keys</li>
-<li>Lines 21 - 79: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 80 - 101: create a summary table for percent cover statistics by year, region across all species, save output</li>
-<li>Lines 102 - 112: create linear model year vs percent cover, save model summary plots to pdf</li>
-<li>Lines 113 - 127: create boxplots of percent cover for any coral by year, save as pdf</li>
-<li>Lines 128 - 144: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
-<li>Lines 145 - 178: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
-<li>Lines 179 - 201: plot model output as estimated linear trend across years by coral region, save as pdf</li>
-<li>Lines 202 - 300: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 20: load libraries and import percent cover data for Florida Keys</li>
+<li>21 - 79: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>80 - 101: create a summary table for percent cover statistics by year, region across all species, save output</li>
+<li>102 - 112: create linear model year vs percent cover, save model summary plots to pdf</li>
+<li>113 - 127: create boxplots of percent cover for any coral by year, save as pdf</li>
+<li>128 - 144: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
+<li>145 - 178: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
+<li>179 - 201: plot model output as estimated linear trend across years by coral region, save as pdf</li>
+<li>202 - 300: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_AnyCoral_FLKEYSRegion.csv" target="_blank">CoralSummaryStatisticsTable_AnyCoral_FLKEYSRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsPlots_AnyCoral_FLKEYSRegion.pdf" target="_blank">CoralSummaryStatisticsPlots_AnyCoral_FLKEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorFLKeys.csv" target="_blank">CorFLKeys.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_AnyCoral_FLKEYSRegion.pdf" target="_blank">CoralBoxplots_AnyCoral_FLKEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_AnyCoral_FLKEYSRegion.csv" target="_blank">Corallme_AnyCoral_FLKEYSRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_AnyCoral_FLKEYSRegion.pdf" target="_blank">CorallmePlot_AnyCoral_FLKEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_AnyCoral_FLKEYSRegion.csv" target="_blank">Coral_lmeResults_AnyCoral_FLKEYSRegion.csv</a></li>
 <li>Potential issues:
 <ul>
-<li>Lines 106, 109: Year is dependent variable in the linear model, it should be the independent variable.</li>
+<li>106, 109: Year is dependent variable in the linear model, it should be the independent variable.</li>
 <li>Model results are separate for each coral region, yet the file includes only one region (Florida Keys). This does not create incorrect output, but the intention is unclear.</li>
 </ul></li>
 </ul></li>
@@ -814,14 +814,14 @@ div.tocify {
 <li>File inputs: Percent Cover - FLA KEYS-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 17: load libraries and import percent cover data for Florida Keys</li>
-<li>Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 83 - 102: create a summary table for percent cover statistics by year, species group, region, save output</li>
-<li>Lines 103 - 108: create linear model year vs percent cover, not separated by species group</li>
-<li>Lines 109 - 123: create boxplots of percent cover by species group, year, save as pdf</li>
-<li>Lines 124 - 159: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv</li>
-<li>Lines 160 - 182: plot model output as estimated linear trend across years by species group, save as pdf</li>
-<li>Lines 183 - 281: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 17: load libraries and import percent cover data for Florida Keys</li>
+<li>18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>83 - 102: create a summary table for percent cover statistics by year, species group, region, save output</li>
+<li>103 - 108: create linear model year vs percent cover, not separated by species group</li>
+<li>109 - 123: create boxplots of percent cover by species group, year, save as pdf</li>
+<li>124 - 159: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv</li>
+<li>160 - 182: plot model output as estimated linear trend across years by species group, save as pdf</li>
+<li>183 - 281: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_Group1_KEYSRegion.csv" target="_blank">CoralSummaryStatisticsTable_Group1_KEYSRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_ByGroup1_KEYSRegion.pdf" target="_blank">CoralBoxplots_ByGroup1_KEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_ByGroup1_KEYSRegion.csv" target="_blank">Corallme_ByGroup1_KEYSRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_ByGroup1_KEYSRegion.pdf" target="_blank">CorallmePlot_ByGroup1_KEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_ByGroup1_KEYSRegion.csv" target="_blank">Coral_lmeResults_ByGroup1_KEYSRegion.csv</a></li>
 <li>Potential issues:
@@ -836,15 +836,15 @@ div.tocify {
 <li>File inputs: Percent Cover - FLA KEYS-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 17: load libraries and import percent cover data for Florida Keys</li>
-<li>Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 83 - 102: create a summary table for percent cover statistics by year, genus, region, save output</li>
-<li>Lines 103 - 109: create linear model year vs percent cover, not separated by genus</li>
-<li>Lines 110 - 124: create boxplots of percent cover by genus, year, save as pdf</li>
-<li>Lines 125 - 160: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID</li>
-<li>Lines 161 - 183: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv</li>
-<li>Lines 184 - 209: plot model output as estimated linear trend across years by genus, save as pdf</li>
-<li>Lines 210 - 308: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 17: load libraries and import percent cover data for Florida Keys</li>
+<li>18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>83 - 102: create a summary table for percent cover statistics by year, genus, region, save output</li>
+<li>103 - 109: create linear model year vs percent cover, not separated by genus</li>
+<li>110 - 124: create boxplots of percent cover by genus, year, save as pdf</li>
+<li>125 - 160: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID</li>
+<li>161 - 183: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv</li>
+<li>184 - 209: plot model output as estimated linear trend across years by genus, save as pdf</li>
+<li>210 - 308: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_Genus_KEYSRegion.csv" target="_blank">CoralSummaryStatisticsTable_Genus_KEYSRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_ByGenus_KEYSRegion.pdf" target="_blank">CoralBoxplots_ByGenus_KEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_ByGenus_KEYSRegion.csv" target="_blank">Corallme_ByGenus_KEYSRegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_ByGenus_KEYSRegion.pdf" target="_blank">CorallmePlot_ByGenus_KEYSRegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_ByGenus_KEYSRegion.csv" target="_blank">Coral_lmeResults_ByGenus_KEYSRegion.csv</a></li>
 <li>Potential issues:
@@ -859,20 +859,20 @@ div.tocify {
 <li>File inputs: Percent Cover - SE FL-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 19: load libraries and import percent cover data for SE Florida</li>
-<li>Lines 20 - 78: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 79 - 100: create a summary table for percent cover statistics by year, region across all species, save output</li>
-<li>Lines 101 - 111: create linear model year vs percent cover, save model summary plots to pdf</li>
-<li>Lines 112 - 126: create boxplots of percent cover for any coral by year, save as pdf</li>
-<li>Lines 127 - 143: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
-<li>Lines 144 - 177: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
-<li>Lines 178 - 200: plot model output as estimated linear trend across years by coral region, save as pdf</li>
-<li>Lines 201 - 299: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 19: load libraries and import percent cover data for SE Florida</li>
+<li>20 - 78: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>79 - 100: create a summary table for percent cover statistics by year, region across all species, save output</li>
+<li>101 - 111: create linear model year vs percent cover, save model summary plots to pdf</li>
+<li>112 - 126: create boxplots of percent cover for any coral by year, save as pdf</li>
+<li>127 - 143: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID</li>
+<li>144 - 177: create linear mixed effects model of percent cover for any coral vs year, random effect for program location ID, separate for coral region, save output as csv</li>
+<li>178 - 200: plot model output as estimated linear trend across years by coral region, save as pdf</li>
+<li>201 - 299: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_AnyCoral_SERegion.csv" target="_blank">CoralSummaryStatisticsTable_AnyCoral_SERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsPlots_AnyCoral_SERegion.pdf" target="_blank">CoralSummaryStatisticsPlots_AnyCoral_SERegion.pdf</a>, CorSE.csv, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_AnyCoral_SERegion.pdf" target="_blank">CoralBoxplots_AnyCoral_SERegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_AnyCoral_SERegion.csv" target="_blank">Corallme_AnyCoral_SERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_AnyCoral_SERegion.pdf" target="_blank">CorallmePlot_AnyCoral_SERegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_AnyCoral_SERegion.csv" target="_blank">Coral_lmeResults_AnyCoral_SERegion.csv</a></li>
 <li>Potential issues:
 <ul>
-<li>Lines 105, 108: Year is dependent variable in the linear model, it should be the independent variable.</li>
+<li>105, 108: Year is dependent variable in the linear model, it should be the independent variable.</li>
 <li>Model results are separate for each coral region, yet the file includes only one region (SE Florida). This does not create incorrect output, but the intention is unclear.</li>
 </ul></li>
 </ul></li>
@@ -883,15 +883,15 @@ div.tocify {
 <li>File inputs: Percent Cover - FLA SE-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 17: load libraries and import percent cover data for SE Florida</li>
-<li>Lines 18 - 81: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 82 - 101: create a summary table for percent cover statistics by year, genus, region, save output</li>
-<li>Lines 102 - 108: create linear model year vs percent cover, not separated by genus</li>
-<li>Lines 109 - 123: create boxplots of percent cover by genus, year, save as pdf</li>
-<li>Lines 124 - 159: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID. No output created because no genus meets the minimum year requirement.</li>
-<li>Lines 160 - 182: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv. No output created because no genus meets the minimum year requirement.</li>
-<li>Lines 183 - 208: plot model output as estimated linear trend across years by genus, save as pdf. No output created because no genus meets the minimum year requirement.</li>
-<li>Lines 209 - 307: format and summarize model output to create summary table of model fit, saved as csv. No output created because no genus meets the minimum year requirement.</li>
+<li>1 - 17: load libraries and import percent cover data for SE Florida</li>
+<li>18 - 81: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>82 - 101: create a summary table for percent cover statistics by year, genus, region, save output</li>
+<li>102 - 108: create linear model year vs percent cover, not separated by genus</li>
+<li>109 - 123: create boxplots of percent cover by genus, year, save as pdf</li>
+<li>124 - 159: remove genera with less than ten years of data, create linear mixed effects model of percent cover for all genera vs year, random effect for program location ID. No output created because no genus meets the minimum year requirement.</li>
+<li>160 - 182: create linear mixed effects model of percent cover for each genus vs year, random effect for program location ID, save output as csv. No output created because no genus meets the minimum year requirement.</li>
+<li>183 - 208: plot model output as estimated linear trend across years by genus, save as pdf. No output created because no genus meets the minimum year requirement.</li>
+<li>209 - 307: format and summarize model output to create summary table of model fit, saved as csv. No output created because no genus meets the minimum year requirement.</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_Genus_SERegion.csv" target="_blank">CoralSummaryStatisticsTable_Genus_SERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_ByGenus_SERegion.pdf" target="_blank">CoralBoxplots_ByGenus_SERegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_ByGenus_SERegion.csv" target="_blank">Corallme_ByGenus_SERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_ByGenus_SERegion.pdf" target="_blank">CorallmePlot_ByGenus_SERegion.pdf</a>, Coral_lmeResults_ByGenus_SERegion.csv</li>
 <li>Potential issues:
@@ -908,14 +908,14 @@ div.tocify {
 <li>File inputs: Percent Cover - SE FL-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 17: load libraries and import percent cover data for SE Florida</li>
-<li>Lines 18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
-<li>Lines 83 - 102: create a summary table for percent cover statistics by year, species group, region, save output</li>
-<li>Lines 103 - 108: create linear model year vs percent cover, not separated by species group</li>
-<li>Lines 109 - 123: create boxplots of percent cover by species group, year, save as pdf</li>
-<li>Lines 124 - 159: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv</li>
-<li>Lines 160 - 182: plot model output as estimated linear trend across years by species group, save as pdf</li>
-<li>Lines 183 - 281: format and summarize model output to create summary table of model fit, saved as csv</li>
+<li>1 - 17: load libraries and import percent cover data for SE Florida</li>
+<li>18 - 82: format data for analysis including removal of non-coral taxa, renaming columns, removing <code>NA</code> percent cover data, combining genus/species columns, and removing missing rows for genus/species</li>
+<li>83 - 102: create a summary table for percent cover statistics by year, species group, region, save output</li>
+<li>103 - 108: create linear model year vs percent cover, not separated by species group</li>
+<li>109 - 123: create boxplots of percent cover by species group, year, save as pdf</li>
+<li>124 - 159: create linear mixed effects model of percent cover for each species group vs year, random effect for program location ID, save as csv</li>
+<li>160 - 182: plot model output as estimated linear trend across years by species group, save as pdf</li>
+<li>183 - 281: format and summarize model output to create summary table of model fit, saved as csv</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralSummaryStatisticsTable_Group1_SERegion.csv" target="_blank">CoralSummaryStatisticsTable_Group1_SERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CoralBoxplots_ByGroup1_SERegion.pdf" target="_blank">CoralBoxplots_ByGroup1_SERegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Corallme_ByGroup1_SERegion.csv" target="_blank">Corallme_ByGroup1_SERegion.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/CorallmePlot_ByGroup1_SERegion.pdf" target="_blank">CorallmePlot_ByGroup1_SERegion.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coral_lmeResults_ByGroup1_SERegion.csv" target="_blank">Coral_lmeResults_ByGroup1_SERegion.csv</a></li>
 <li>Potential issues:
@@ -929,7 +929,7 @@ div.tocify {
 <div id="coastal-wetlands" class="section level2" number="2.3">
 <h2 number="2.3"><span class="header-section-number">2.3</span> Coastal wetlands</h2>
 <div id="scripts-2" class="section level3 unnumbered">
-<h3 class="unnumbered">Scripts:</h3>
+<h3 class="unnumbered">Scripts</h3>
 <table>
 <thead>
 <tr class="header">
@@ -953,7 +953,7 @@ div.tocify {
 </table>
 </div>
 <div id="summaries-2" class="section level3 unnumbered">
-<h3 class="unnumbered">Summaries:</h3>
+<h3 class="unnumbered">Summaries</h3>
 <ol style="list-style-type: decimal">
 <li>Final 2021.09.19_SEACAR_CoastalWetlands_GroupRichness.R
 <ul>
@@ -962,26 +962,26 @@ div.tocify {
 <li>File inputs: All Parameters but Hecatres-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 23: load libraries and import wetland richness data for all regions</li>
-<li>Lines 24 - 119: format data for analysis including removal of <code>NA</code> data for genus, species, dates, removal of programs with insufficient data, removal of duplicates, formatting of genus, species, date columns, correct misspelled taxa, create unique species list by removing those doubly counted by different programs</li>
-<li>Lines 120 - 166: remove managed areas that don’t have at least five years of data, estimate group richness by management area, year, month</li>
-<li>Lines 167 - 187: create plots of group richness by management area, year, month</li>
-<li>Lines 188 - 207: create plots of group richness by management area, year</li>
-<li>Lines 208 - 224: select one managed area (GTMNERR), create and plot a linear model of group richness by month</li>
-<li>Lines 225 - 235: create plots of group richness by year, month and by year for selected managed area</li>
-<li>Lines 236 - 243: create a histogram of group richness for the selected managed area</li>
-<li>Lines 244 - 279: create a linear model of group richness by year for the selected managed area, plot the results</li>
-<li>Lines 280 - 298: select one managed area (Guana River Marsh), create and plot a linear model of group richness by month</li>
-<li>Lines 299 - 309: create plots of group richness by year, month and by year for selected managed area</li>
-<li>Lines 310 - 317: create a histogram of group richness for the selected managed area</li>
-<li>Lines 318 - 354: create a linear model of group richness by year for the selected managed area, plot the results</li>
+<li>1 - 23: load libraries and import wetland richness data for all regions</li>
+<li>24 - 119: format data for analysis including removal of <code>NA</code> data for genus, species, dates, removal of programs with insufficient data, removal of duplicates, formatting of genus, species, date columns, correct misspelled taxa, create unique species list by removing those doubly counted by different programs</li>
+<li>120 - 166: remove managed areas that don’t have at least five years of data, estimate group richness by management area, year, month</li>
+<li>167 - 187: create plots of group richness by management area, year, month</li>
+<li>188 - 207: create plots of group richness by management area, year</li>
+<li>208 - 224: select one managed area (GTMNERR), create and plot a linear model of group richness by month</li>
+<li>225 - 235: create plots of group richness by year, month and by year for selected managed area</li>
+<li>236 - 243: create a histogram of group richness for the selected managed area</li>
+<li>244 - 279: create a linear model of group richness by year for the selected managed area, plot the results</li>
+<li>280 - 298: select one managed area (Guana River Marsh), create and plot a linear model of group richness by month</li>
+<li>299 - 309: create plots of group richness by year, month and by year for selected managed area</li>
+<li>310 - 317: create a histogram of group richness for the selected managed area</li>
+<li>318 - 354: create a linear model of group richness by year for the selected managed area, plot the results</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coastal%20Wetlands%20Group%20Richness%20by%20YearMonth,%20Managed%20Area.pdf" target="_blank">Coastal Wetlands Group Richness by YearMonth, Managed Area.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coastal%20Wetlands%20Group%20Richness%20by%20Year,%20Managed%20Area.pdf.pdf" target="_blank">Coastal Wetlands Group Richness by Year, Managed Area.pdf.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GTMNERR%20Coastal%20Wetlands%20Group%20Richness%20Data.pdf" target="_blank">GTMNERR Coastal Wetlands Group Richness Data.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GTMNERR%20Coastal%20Wetlands%20Group%20Richness%20by%20Year_Diagnostics.pdf" target="_blank">GTMNERR Coastal Wetlands Group Richness by Year_Diagnostics.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GuanaRiverMarsh%20Coastal%20Wetlands%20Group%20Richness%20Data.pdf" target="_blank">GuanaRiverMarsh Coastal Wetlands Group Richness Data.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GuanaRiverMarsh%20Coastal%20Wetlands%20Group%20Richness%20by%20Year_Diagnostics.pdf" target="_blank">GuanaRiverMarsh Coastal Wetlands Group Richness by Year_Diagnostics.pdf</a></li>
 <li>Potential issues:
 <ul>
 <li>The plots of richness by year in lines 188 - 207 use the same data to plot richness by month, year and is an incorrect measure of richness within a year. Unique groups in each year need to be separately calculated.</li>
 <li>Plots in lines 225 - 235, 299 - 309 are redundant with those in 167 - 207</li>
-<li>Lines 270 - 278, 344 - 352 are commented code to evaluate linear models with different distribution families, e.g., Poisson, etc. These are worth exploring.</li>
+<li>270 - 278, 344 - 352 are commented code to evaluate linear models with different distribution families, e.g., Poisson, etc. These are worth exploring.</li>
 </ul></li>
 </ul></li>
 <li>FINAL 2021.09.19_SEACAR_CoastalWetlands_SppRich_Region.R
@@ -991,26 +991,26 @@ div.tocify {
 <li>File inputs: All Parameters but Hecatres-2021-Jul-26.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Lines 1 - 23: load libraries and import wetland richness data for all regions</li>
-<li>Lines 24 - 121: format data for analysis including removal of <code>NA</code> data for genus, species, dates, removal of programs with insufficient data, removal of duplicates, formatting of genus, species, date columns, correct misspelled taxa, create unique species list by removing those doubly counted by different programs</li>
-<li>Lines 122 - 168: remove managed areas that don’t have at least five years of data, estimate species richness by management area, year, month</li>
-<li>Lines 169 - 189: create plots of species richness by management area, year, month</li>
-<li>Lines 190 - 209: create plots of species richness by management area, year</li>
-<li>Lines 210 - 226: select one managed area (GTMNERR), create and plot a linear model of species richness by month</li>
-<li>Lines 227 - 237: create plots of species richness by year, month and by year for selected managed area</li>
-<li>Lines 238 - 245: create a histogram of species richness for the selected managed area</li>
-<li>Lines 246 - 281: create a linear model of species richness by year for the selected managed area, plot the results</li>
-<li>Lines 282 - 300: select one managed area (Guana River Marsh), create and plot a linear model of species richness by month</li>
-<li>Lines 301 - 311: create plots of species richness by year, month and by year for selected managed area</li>
-<li>Lines 312 - 319: create a histogram of species richness for the selected managed area</li>
-<li>Lines 320 - 356: create a linear model of species richness by year for the selected managed area, plot the results</li>
+<li>1 - 23: load libraries and import wetland richness data for all regions</li>
+<li>24 - 121: format data for analysis including removal of <code>NA</code> data for genus, species, dates, removal of programs with insufficient data, removal of duplicates, formatting of genus, species, date columns, correct misspelled taxa, create unique species list by removing those doubly counted by different programs</li>
+<li>122 - 168: remove managed areas that don’t have at least five years of data, estimate species richness by management area, year, month</li>
+<li>169 - 189: create plots of species richness by management area, year, month</li>
+<li>190 - 209: create plots of species richness by management area, year</li>
+<li>210 - 226: select one managed area (GTMNERR), create and plot a linear model of species richness by month</li>
+<li>227 - 237: create plots of species richness by year, month and by year for selected managed area</li>
+<li>238 - 245: create a histogram of species richness for the selected managed area</li>
+<li>246 - 281: create a linear model of species richness by year for the selected managed area, plot the results</li>
+<li>282 - 300: select one managed area (Guana River Marsh), create and plot a linear model of species richness by month</li>
+<li>301 - 311: create plots of species richness by year, month and by year for selected managed area</li>
+<li>312 - 319: create a histogram of species richness for the selected managed area</li>
+<li>320 - 356: create a linear model of species richness by year for the selected managed area, plot the results</li>
 </ul></li>
 <li>File outputs: <a href="https://FloridaSEACAR.github.io/SEACAR/output/wetlandsspprichReg.csv" target="_blank">wetlandsspprichReg.csv</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coastal%20Wetlands%20Species%20Richness%20by%20YearMonth,%20Managed%20Area.pdf" target="_blank">Coastal Wetlands Species Richness by YearMonth, Managed Area.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/Coastal%20Wetlands%20Species%20Richness%20by%20Year,%20Managed%20Area.pdf.pdf" target="_blank">Coastal Wetlands Species Richness by Year, Managed Area.pdf.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GTMNERR%20Coastal%20Wetlands%20Species%20Richness%20Data.pdf" target="_blank">GTMNERR Coastal Wetlands Species Richness Data.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GTMNERR%20Coastal%20Wetlands%20Species%20Richness%20by%20Year_Diagnostics.pdf" target="_blank">GTMNERR Coastal Wetlands Species Richness by Year_Diagnostics.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GuanaRiverMarsh%20Coastal%20Wetlands%20Species%20Richness%20Data.pdf" target="_blank">GuanaRiverMarsh Coastal Wetlands Species Richness Data.pdf</a>, <a href="https://FloridaSEACAR.github.io/SEACAR/output/GuanaRiverMarsh%20Coastal%20Wetlands%20Species%20Richness%20by%20Year_Diagnostics.pdf" target="_blank">GuanaRiverMarsh Coastal Wetlands Species Richness by Year_Diagnostics.pdf</a></li>
 <li>Potential issues:
 <ul>
 <li>The plots of richness by year in lines 190 - 209 use the same data to plot richness by month, year and is an incorrect measure of richness within a year. Unique species in each year need to be separately calculated.</li>
 <li>Plots in lines 227 - 237, 301 - 311 are redundant with those in 169 - 209</li>
-<li>Lines 272 - 280, 346 -354 are commented code to evaluate linear models with different distribution families, e.g., Poisson, etc. These are worth exploring.</li>
+<li>272 - 280, 346 -354 are commented code to evaluate linear models with different distribution families, e.g., Poisson, etc. These are worth exploring.</li>
 </ul></li>
 </ul></li>
 </ol>
@@ -1019,7 +1019,7 @@ div.tocify {
 <div id="submered-aquatic-vegetation" class="section level2" number="2.4">
 <h2 number="2.4"><span class="header-section-number">2.4</span> Submered aquatic vegetation</h2>
 <div id="scripts-3" class="section level3 unnumbered">
-<h3 class="unnumbered">Scripts:</h3>
+<h3 class="unnumbered">Scripts</h3>
 <table>
 <thead>
 <tr class="header">
@@ -1038,31 +1038,71 @@ div.tocify {
 </table>
 </div>
 <div id="summaries-3" class="section level3 unnumbered">
-<h3 class="unnumbered">Summaries:</h3>
+<h3 class="unnumbered">Summaries</h3>
 <ol style="list-style-type: decimal">
 <li>SECAR_SAV_BB_script.R
 <ul>
-<li>Objective:</li>
+<li>Objective: Import and format SAV data, create summary plots and maps of changes over time, model changes over time using Bayesian and mixed-effects models. Results are separate for each managed area, species, and parameter (e.g., Braun Blanquet, percent cover, etc.).</li>
 <li>Packages: bayesplot, brms, broom.mixed, data.table, grid, gridExtra, gtable, nlme, scales, sf, tictoc, tidybayes, tidyverse</li>
 <li>File inputs: Combined_SAV_column_All-2021-Sep-20.csv, seacar_dbo_SampleLocation_Point.shp, seacar_dbo_SampleLocation_Line.shp, ORCP_Managed_Areas.shp, Counties_-_Detailed_Shoreline.shp, MApolygons_corners.csv</li>
 <li>Steps by line number:
 <ul>
-<li>Line</li>
+<li>1 - 17: load libraries and import SAV file</li>
+<li>18 - 104: format SAV data including renaming columns, removing <code>NA</code> values, and reformatting abundance/cover values. For the latter, this included removal of <code>NA</code> values and those out of range, and ensuring appropriate values for Braun Blanquet, modified Braun Blaunqet, percent occurrence, and percent cover.</li>
+<li>105 - 243: commented (not used) code for creating a percent occurrence table and functions for plotting model results</li>
+<li>244 - 293: function for plotting model predictions</li>
+<li>294 - 342: function for rotating a spatial object, used for plotting to create a presentation of stacked 2-d layers.</li>
+<li>343 - 366: import spatial data objects, project all to WGS 1984 datum. Spatial data objects include sample locations and relevant boundaries (counties, management area boundaries)</li>
+<li>367 - 400: setup parameter list and objects for looping through parameters to create models and summary output, parameters include Braun Blanquet, median percent cover, visual percent cover, percent occurrence, frequency of occurrence</li>
+<li>401 - 1712: loop through parameters to create models and summary output, the following is an outline of steps in this loop.
+<ul>
+<li>416 -1710: loop through managed areas using parameter from outside loop</li>
+<li>435 - 449: create and save plot of parameter score for managed area over time by species</li>
+<li>450 - 464: create and save plot of parameter score for managed area over time by program ID</li>
+<li>465 - 479: create and save plot of parameter score for managed area over time grouped by species, by program ID</li>
+<li>480 - 494: create and save plot of quadrat sizes for managed area over time by species</li>
+<li>495 - 509: create and save plot of quadrat sizes for managed area over time by program ID</li>
+<li>510 - 524: create and save plot of method for managed area over time by species</li>
+<li>525 - 539: create and save plot of method for managed area over time by program ID</li>
+<li>540 - 555: create and save plot of method for managed area by quadrat size and species</li>
+<li>556 - 571: create and save plot of method for managed area by quadrat size and program ID</li>
+<li>572 - 603: create and save plots of grid values over time by species and program ID if data available</li>
+<li>604 - 636: create and save plots of depth values over time by species and program ID if data available</li>
+<li>637 - 655: create and save a plot legend of species</li>
+<li>675 - 681: loop through species to create and save a plot of parameter score over time</li>
+<li>681 - 704: create and save a plot of totals for the species of parameter score over time</li>
+<li>705 - 723: create and save a plot legend of species</li>
+<li>724 - 749: loop through species to create and save a plot of parameter score as boxplots over time</li>
+<li>750 - 772: create and save a plot of boxplots for the species of parameter score over time</li>
+<li>773 - 833: create and save stacked maps of parameter values for the managed area by year</li>
+<li>834 - 886: setup empty objects for model results</li>
+<li>888 - 1603: Loop through species to fit models, with separate exception statements for different parameters. The modeling workflow is similar for each parameter, with minor exceptions. The general goal of each is to assess trends in a parameter over time for a particular species and managed area. Each workflow includes error handling if models did not converge, produces summary tables of model fit, and summary plots showing model result. The models vary in the Gaussian distribution family for the response variable depending on parameter. Random effects (e.g., for <code>LocationID</code>) are used for all models.<br />
+</li>
+<li>1604 - 1648: create and save barplots of parameter results for managed area over time by species, only for Braun Blanquet and percent cover, save model results from prior loops</li>
+<li>1649 - 1666: save model results from prior loops for frequency occurrence and percent occurrence</li>
+<li>1667 - 1704: create and save barplots of parameter results for managed area over time by species, only for frequency occurrence, save model results from prior loops</li>
+<li>1705 - 1709: print statements for the console</li>
+</ul></li>
+<li>1713 - 1716: save list of failed models and R session info</li>
 </ul></li>
 <li>File outputs: Multiple binary RDS files.</li>
-<li>Potential issues:</li>
+<li>Potential issues:
+<ul>
+<li>Functions use objects created in the global environment, not passed as arguments to the function, e.g., line 244 uses <code>SAV4</code> inside the function, but it is not used as an argument to the function. The script works, but it can cause problems for modularity (i.e., if functions were moved to another script).</li>
+<li>All output, including plots, are in binary format, which I assume was to reduce file size, but it is difficult to evaluate results in this format. There are also hundreds of files, so a summary or a discussion of how these results are presented is needed.</li>
+</ul></li>
 </ul></li>
 </ol>
 <!-- ## Oyster reef -->
-<!-- ### Scripts: {-} -->
+<!-- ### Scripts {-} -->
 <!-- ```{r} -->
 <!-- scrpt <- scrptflt(fls, 'oy') -->
 <!-- kable(scrpt) -->
 <!-- ``` -->
-<!-- ### Summaries: {-} -->
+<!-- ### Summaries {-} -->
 <!-- 1. SEACAR_SAV_BB_script.R -->
 <!-- 1. NA -->
-<!-- ### Summaries: {-} -->
+<!-- ### Summaries {-} -->
 <!-- 1. SEACAR_SAV_BB_script.R -->
 </div>
 </div>
@@ -1090,6 +1130,7 @@ div.tocify {
 <li>As with other habitat types, the coral analyses could be greatly simplified by creating functions that accomplish routine tasks. Each analysis is similar - for each region, create a linear model of percent cover across years, with separate models for all taxa combined, by genus, or by species groups. Standardized outputs are also created, e.g., plots of model predictions, tables of model summaries, plots of observed data, etc. All of this can be turned into functions, including appropriate exceptions within each function to handle unique cases (e.g., filter genus data for those with at least ten years of data).</li>
 <li>Coastal wetlands scripts only evaluate richness. There were no analyses evaluating percent cover, which were indicated as an outcome in supplementary documents.</li>
 <li>Coastal wetlands analyses filter managed areas that do not have at least five years of data. Other analyses use ten years as a criteria. Is there a justification for choosing a minimum number of years?</li>
+<li>For seagrasses, the modelling work is by far the most comprehensive, but it will be very challenging to distill the results into meaningful summaries. I also question if the modelling framework can be simplified. Bayesian models with prior distributions are used for many of the parameters, which likely creates a more robust model, but it may be difficult to scale these models for automation. Other habitat analyses use simple non-parametric tests, which have their downfalls, but it may be worth exploring these simpler models, i.e., do the more complex models provide an advantage or do they give the same answer at the end of the day? The summary plots are also generally diagnostic and not a synthesis of results for quick interpretation. The stacked maps are cool, but the idea doesn’t translate well for more than a handful of years (i.e., each layer in the stack is a year).</li>
 </ul>
 </div>
 
