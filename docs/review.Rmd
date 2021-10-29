@@ -607,14 +607,29 @@ fl <- scrpt$File[2]
 ### Scripts: {-}
 
 ```{r}
-scrpt <- scrptflt(fls, 'sg')
+scrpt <- tibble(
+  Index = '1', 
+  File = 'SEACAR_SAV_BB_script.R',
+  Link = '[link](https://github.com/FloridaSEACAR/SAV_CLR/blob/main/SEACAR_SAV_BB_script.R) - private repo'
+)
 kable(scrpt)
 ```
 
 ### Summaries: {-}
 
-1. `r scrpt$File[1]`
-1. `r scrpt$File[2]`
+```{r}
+fl <- 'SEACAR_SAV_BB_script.R'
+```
+
+1. SECAR_SAV_BB_script.R
+     * Objective:
+     * Packages: `r scrptlib(fl)`
+     * File inputs: `r scrptinp(fl)`
+     * Steps by line number:
+          * Line 
+     * File outputs: Multiple binary RDS files.
+     * Potential issues:
+
 
 <!-- ## Oyster reef -->
 

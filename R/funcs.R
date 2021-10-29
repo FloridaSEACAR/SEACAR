@@ -24,12 +24,15 @@ scrptinp <- function(fl){
     dplyr[...],
     here[...]
   )
-  
+
   tmp <- readLines(here(fl))
-  tmp <- grep('read\\.csv', tmp, value = T)
+  tmp <- grep('read\\.csv|fread|st\\_read', tmp, value = T)
   tmp <- tmp[!grepl('\\#', tmp)] # remove commented lines
   
-  out <- sapply(tmp, function(x) x %>% basename %>% gsub('")$', '', .)) %>% 
+  out <- tmp %>% 
+    gsub('^.*\"(.*)\".*$', '\\1', .) %>% 
+    basename %>% 
+    # sapply(tmp, function(x) x %>% basename %>% gsub('")$', '', .)) %>% 
     paste(collapse = ', ')
 
   if(nchar(out) == 0)
