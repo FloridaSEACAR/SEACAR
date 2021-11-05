@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR code review</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-10-29 13:13:22</h4>
+<h4 class="date">2021-11-05 17:01:07</h4>
 
 </div>
 
@@ -1040,7 +1040,7 @@ div.tocify {
 <div id="summaries-3" class="section level3 unnumbered">
 <h3 class="unnumbered">Summaries</h3>
 <ol style="list-style-type: decimal">
-<li>SECAR_SAV_BB_script.R
+<li>SEACAR_SAV_BB_script.R
 <ul>
 <li>Objective: Import and format SAV data, create summary plots and maps of changes over time, model changes over time using Bayesian and mixed-effects models. Results are separate for each managed area, species, and parameter (e.g., Braun Blanquet, percent cover, etc.).</li>
 <li>Packages: bayesplot, brms, broom.mixed, data.table, grid, gridExtra, gtable, nlme, scales, sf, tictoc, tidybayes, tidyverse</li>
@@ -1093,17 +1093,68 @@ div.tocify {
 </ul></li>
 </ul></li>
 </ol>
-<!-- ## Oyster reef -->
-<!-- ### Scripts {-} -->
-<!-- ```{r} -->
-<!-- scrpt <- scrptflt(fls, 'oy') -->
-<!-- kable(scrpt) -->
-<!-- ``` -->
-<!-- ### Summaries {-} -->
-<!-- 1. SEACAR_SAV_BB_script.R -->
-<!-- 1. NA -->
-<!-- ### Summaries {-} -->
-<!-- 1. SEACAR_SAV_BB_script.R -->
+</div>
+</div>
+<div id="oyster-reef" class="section level2" number="2.5">
+<h2 number="2.5"><span class="header-section-number">2.5</span> Oyster reef</h2>
+<div id="scripts-4" class="section level3 unnumbered">
+<h3 class="unnumbered">Scripts</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Index</th>
+<th align="left">File</th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">SEACAR_Oyster_Analyses_Final.R</td>
+<td align="left"><a href="https://github.com/FloridaSEACAR/SEACAR/blob/master/SEACAR_Oyster_Analyses_Final.R">link</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="summaries-4" class="section level3 unnumbered">
+<h3 class="unnumbered">Summaries</h3>
+<ol style="list-style-type: decimal">
+<li>SEACAR_Oyster_Analyses_Final.R</li>
+</ol>
+<ul>
+<li>Objective: Import and format oyster data, model changes over time using Bayesian and mixed-effects models. Results are separate for each managed area, size classes (25 - 75, &gt; 75), and parameter (e.g., shell height, density, percent live).
+<ul>
+<li>Packages: brms, data.table, doFuture, doRNG, ggplot2, here, lubridate, mapview, modelr, piecewiseSEM, rcompanion, Rmisc, sf, tictoc, tidybayes, tidyverse</li>
+<li>File inputs: All_Parameters_but_Hectares-2021-Sep-20.csv, Oyster_Beds_in_Florida.shp, Florida_Aquatic_Preserves.shp, Florida_National_Estuarine_Resarch_Reserves__NERR__Boundaries.shp, GTM_RB_2016_Merge.kml, seacar_dbo_SampleLocation_Point.shp, GTMNERR_Regions.kml</li>
+<li>Steps by line number:
+<ul>
+<li>1 - 36: load libraries and import oyster data</li>
+<li>37 - 244: create universal reef IDs</li>
+<li>245 - 279: add a second region column for areas of the Guana Tolomato NERR to the oyster data</li>
+<li>280 - 402: formatting of oyster data including correct date column, converting columns to correct format (i.e., numeric, character, etc.), manual correction of data entries that were in error, filling missing values that can be calculated from non-missing columns (i.e., density), verifying unique quadrat identifiers, and removing size outliers. An empty table for storing model results is also created.</li>
+<li>403 - 419: create a summary table of oyster shell height</li>
+<li>420 - 1660: these lines are repeated code to evaluate trends in oyster shell height over time by managed area, where the code is repeated by managed area. Separate models are created for size ranges for those from 25 - 75 mm and those greater than 75. Trends are assessed using Bayesian regression models, that also incorporate measurement error of predictors (<code>Sample_age_stdev</code>) and random effects (<code>UniversalReefID</code>). Summary outputs for each model include diagnostic plots and estimated trends.</li>
+<li>1661 - 1698: create a summarized oyster density table</li>
+<li>1699 - 1931: estimate densities by different size classes</li>
+<li>1932 - 2317: these lines are repeated code to evaluate trends in oyster density over time by managed area, where the code is repeated by managed area. Trends are assessed using Bayesian regression models, with random effects for relative year conditional on <code>UniversalReefID</code>. Summary outputs for each model include diagnostic plots and estimated trends.</li>
+<li>2318 - 2534: similar models and results as those from the previous lines are created, but for oyster densities in size classes 25 - 75mm</li>
+<li>2535 - 2686: similar models and results as those from the previous lines are created, but for oyster densities in size classes &gt; 75mm</li>
+<li>2687 - 2732: create a data table for percent live for models in the following lines</li>
+<li>2733 - 2947: these lines are repeated code to evaluate trends in percent live oysters over time by managed area, where the code is repeated by managed area. Trends are assessed using Bayesian regression models, with random effects for relative year conditional on <code>UniversalReefID</code>. Summary outputs for each model include diagnostic plots and estimated trends.</li>
+</ul></li>
+<li>File outputs: Multiple binary RDS files. Some plot results are created as jpeg files but I could not reproduce.</li>
+<li>Potential issues:
+<ul>
+<li>I could not recreate any of the results because the formatting on lines 280 - 402 did not produce data appropriate for analysis. This is likely a simple issue with data inputs and package versioning (i.e., my local setup is not the same as the setup used to write the scripts).</li>
+<li>I could not recreate the universal reef IDs on lines 37 - 244, as noted by S. Durham. These IDs should have been added to the database by Claude, so this code is not necessary but may be good to keep for a record of how the IDs were created.</li>
+<li>The projection for the shapefiles used for creating the universal reef IDs is for a UTM zone that applies to North Carolina (EPSG: 32119). I’m not sure this matters, but it may be worth verifying no spatial inaccuracies result from applying the projection to Florida data.</li>
+<li>The conversion of the <code>LiveDate</code> column to an integer does not work on line 297. I assume this is meant to extract a year value from a date column. Downstream analyses do not work without this column.<br />
+</li>
+<li>Oyster summary table on lines 403 - 419 returns NA values for all estimates of shell height because column conversions earlier in the script did not work.</li>
+<li>The code on lines 1699 - 1931 is very difficult to follow and it’s not clear what’s produced.</li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
 </div>
 </div>
@@ -1130,7 +1181,9 @@ div.tocify {
 <li>As with other habitat types, the coral analyses could be greatly simplified by creating functions that accomplish routine tasks. Each analysis is similar - for each region, create a linear model of percent cover across years, with separate models for all taxa combined, by genus, or by species groups. Standardized outputs are also created, e.g., plots of model predictions, tables of model summaries, plots of observed data, etc. All of this can be turned into functions, including appropriate exceptions within each function to handle unique cases (e.g., filter genus data for those with at least ten years of data).</li>
 <li>Coastal wetlands scripts only evaluate richness. There were no analyses evaluating percent cover, which were indicated as an outcome in supplementary documents.</li>
 <li>Coastal wetlands analyses filter managed areas that do not have at least five years of data. Other analyses use ten years as a criteria. Is there a justification for choosing a minimum number of years?</li>
-<li>For seagrasses, the modelling work is by far the most comprehensive, but it will be very challenging to distill the results into meaningful summaries. I also question if the modelling framework can be simplified. Bayesian models with prior distributions are used for many of the parameters, which likely creates a more robust model, but it may be difficult to scale these models for automation. Other habitat analyses use simple non-parametric tests, which have their downfalls, but it may be worth exploring these simpler models, i.e., do the more complex models provide an advantage or do they give the same answer at the end of the day? The summary plots are also generally diagnostic and not a synthesis of results for quick interpretation. The stacked maps are cool, but the idea doesn’t translate well for more than a handful of years (i.e., each layer in the stack is a year).</li>
+<li>For seagrasses, the modelling work is by far the most comprehensive, but it will be very challenging to distill the results into meaningful summaries. I also question if the modelling framework can be simplified. Bayesian models with prior distributions are used for many of the parameters, which likely creates a more robust model, but it may be difficult to scale these models for automation. Other habitat analyses use simple non-parametric tests, which have their downfalls, but it may be worth exploring these simpler models, i.e., do the more complex models provide an advantage or do they give the same answer at the end of the day? The summary plots are also generally diagnostic and not a synthesis of results for quick interpretation. The stacked maps are cool, but the idea doesn’t translate well for more than a handful of years (i.e., each layer in the stack is a year).<br />
+</li>
+<li>For oysters, many of my comments about model complexity for the seagrass analyses apply equally to these.</li>
 </ul>
 </div>
 
