@@ -184,7 +184,7 @@ fl <- scrpt$File[5]
           * 401 - 472: format all trend tests in a simple table, combine with region names, save output as csv
      * File outputs: `r scrptout(fl)`
      * Potential issues: 
-          * Line 115: Date conversion is incorrect, creates all `NA` preventing downstream analysis
+          * Line 115: Date conversion is incorrect, uses `format="%m/%d/%y"`, which should be `format="%m/%d/%Y".  The former assigns incorrect year.
           * Line 235 (and others): boxplot summaries should be on log-scale
           * NA values were also removed for dates that were incomplete.  This may possibly be corrected through additional formatting but is not done here. 
           * Values at MDL are not removed, these need to be treated separately before running trend tests, i.e., estimate averages using appropriate statistics that account for left-censored data.
