@@ -1,0 +1,69 @@
+---
+title: "TN rubrik"
+output: 
+  html_document
+date: "`r Sys.time()`"
+author: "Marcus W. Beck, mbeck@tbep.org"
+---
+
+First, we create some simulated data with random missing values.  This dataset is a daily time series from Jan 1st, 2021 to the end of the year. TN is first created as the sum of TKN and NO23, where TKN and NO23 are randomly generated values rom 0 - 5 and 0 - 2, respectively.  Then I create separate vectors for NO2 and NO3 as a random ratio of NO23.  Organic N and NH3 also created as random ratios of TKN.
+
+```{r, message = F, warning = F}
+library(dplyr)
+library(lubridate)
+
+set.seed(123)
+
+n <- 365
+simdat <- tibble(
+    date = seq.Date(ymd('2021-01-01'), ymd('2021-12-31'), length.out = n),
+    TKN = runif(n, 0, 5), 
+    NO23 = runif(n, 0, 2)
+  ) %>% 
+  mutate(
+    TN = TKN + NO23, 
+    NO2 = runif(n, 0, 1) * NO23,
+    NO3 = NO23 - NO2, 
+    NH3 = runif(n, 0, 1) * TKN, 
+    OrgN = TKN - NH3
+  ) %>% 
+  select(TN, NO23, NO2, NO3, TKN, OrgN, NH3)
+
+head(simdat, 15)
+```
+
+Then I randomly assigned half the values for all variables as missing.  All of this is to just create a "realistic" dataset with a bunch of missing values, where TN is additive components of TKN and NO23, TKN is additive components of organic N and NH3, and NO23 is additive components of NO2 and NO3.
+
+```{r}
+simdat <- simdat %>% 
+  mutate_if(is.numeric, function(x) ifelse(sample(c(T, F), n, replace = T), NA, x))
+
+head(simdat, 15)
+```
+
+Then, missing values for TN are reconstructed using the following logic.  These happen stepwise, first calculating missing NO23 and TKN, then finishing with TN.
+
+* If NO23 is `NA`, create as sum of NO2 and NO3, no requirement for both being valid but will not sum if both missing
+* If TKN is `NA`, create as sum of NH3 and OrgN, no requirement for both being valid but will not sum if both missing
+* If TN is `NA`, create as sum of TKN and NO23, no requirement for both being valid but will not sum if both missing
+
+```{r}
+tnsimdat <- simdat %>% 
+  rowwise() %>%
+  mutate(
+    TKN = case_when(
+      is.na(TKN) & sum(is.na(c(NH3, OrgN))) != 2 ~ sum(c(OrgN, NH3), na.rm = T),
+      T ~ TKN
+    ),
+    NO23 = case_when(
+      is.na(NO23) & sum(is.na(c(NO2, NO3))) != 2 ~ sum(c(NO2, NO3), na.rm = T),
+      T ~ NO23
+    ),
+    TN = case_when(
+      is.na(TN) & sum(is.na(c(TKN, NO23))) != 2 ~ sum(c(TKN, NO23), na.rm = T),
+      T ~ TN
+    )
+  )
+
+head(tnsimdat, 15)
+```
