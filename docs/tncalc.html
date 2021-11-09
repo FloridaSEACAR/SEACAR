@@ -166,7 +166,7 @@ pre code {
 
 <h1 class="title toc-ignore">TN rubrik</h1>
 <h4 class="author">Marcus W. Beck, <a href="mailto:mbeck@tbep.org" class="email">mbeck@tbep.org</a></h4>
-<h4 class="date">2021-11-09 16:32:23</h4>
+<h4 class="date">2021-11-09 16:36:19</h4>
 
 </div>
 
@@ -234,7 +234,7 @@ head(simdat, 15)</code></pre>
 ## 13 NA     0.418   0.0206   0.397  NA     0.211 NA    
 ## 14  3.48 NA      NA       NA      NA    NA     NA    
 ## 15 NA    NA       0.624   NA      NA     0.175  0.340</code></pre>
-<p>Then, missing values for TN are reconstructed using the following logic. These happen stepwise, first calculating missing NO23 and TKN, then finishing with TN.</p>
+<p>Then, missing values for TN are reconstructed using the following logic. These happen stepwise, first calculating missing NO23 and TKN, then finishing with TN. Note that the final TN values may not equal those of the original simulated data due to the requirements for summing the missing components (e.g., NO23 is the sum of NO2 and NO3, with no requirement that both be present).</p>
 <ul>
 <li>If NO23 is <code>NA</code>, create as sum of NO2 and NO3, no requirement for both being valid but will not sum if both missing</li>
 <li>If TKN is <code>NA</code>, create as sum of NH3 and OrgN, no requirement for both being valid but will not sum if both missing</li>

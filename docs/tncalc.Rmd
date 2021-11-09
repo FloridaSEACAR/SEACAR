@@ -41,7 +41,7 @@ simdat <- simdat %>%
 head(simdat, 15)
 ```
 
-Then, missing values for TN are reconstructed using the following logic.  These happen stepwise, first calculating missing NO23 and TKN, then finishing with TN.
+Then, missing values for TN are reconstructed using the following logic.  These happen stepwise, first calculating missing NO23 and TKN, then finishing with TN.  Note that the final TN values may not equal those of the original simulated data due to the requirements for summing the missing components (e.g., NO23 is the sum of NO2 and NO3, with no requirement that both be present).
 
 * If NO23 is `NA`, create as sum of NO2 and NO3, no requirement for both being valid but will not sum if both missing
 * If TKN is `NA`, create as sum of NH3 and OrgN, no requirement for both being valid but will not sum if both missing
