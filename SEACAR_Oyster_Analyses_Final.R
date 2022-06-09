@@ -1944,7 +1944,7 @@ modresults(data, models, "Percent live", meplotzoom = FALSE)
 # Save all model results --------------------------------------------------
 
 write.csv(oysterresults, here::here(paste0("GLMM_AllDates_ModelResults_", Sys.Date(), ".csv")))
-saveRDS(oysterresults, here::here(paste0("oysterresults_", Sys.Date())))
+saveRDS(oysterresults, here::here(paste0("oysterresults_", Sys.Date(), ".rds")))
 
 #Get Rhat values for all models to check which ones may need to be reparameterized
 model_list <- unique(oysterresults$filename)
@@ -1970,8 +1970,8 @@ for(mod in model_list){
 rhats_all[, rhat_r := round(rhat, 2)]
 rhats_sum[, rhat_r := round(rhat, 2)]
 
-saveRDS(rhats_all, here::here(paste0("rhats_all_", Sys.Date())))
-saveRDS(rhats_sum, here::here(paste0("rhats_sum_", Sys.Date())))
+saveRDS(rhats_all, here::here(paste0("rhats_all_", Sys.Date(), ".rds")))
+saveRDS(rhats_sum, here::here(paste0("rhats_sum_", Sys.Date(), ".rds")))
 
 models_to_check_allrhat <- unique(rhats_all[rhat_r > 1.05, filename])
 models_to_check_sumrhat <- unique(rhats_sum[rhat_r > 1.05, filename])
