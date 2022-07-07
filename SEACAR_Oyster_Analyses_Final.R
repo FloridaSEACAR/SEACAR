@@ -492,7 +492,7 @@ diagnosticplots <- function(model, indicator, managedarea, sizeclass = "", histo
   #Save posterior predictive check plot
   postpc <- tryCatch(pp_check(model),
                      error = function(e) NA)
-  k <- 1
+  k <- 1001
   
   while(is.na(postpc) == TRUE & k <= 1000){
     postpc <- tryCatch(pp_check(model), 
@@ -1056,43 +1056,43 @@ models <- list(an_sho75_glmm, an_sho75_glmm_hist)
 modresults(data, models, "Size class", meplotzoom = TRUE)
 
 
-## Big Bend Seagrasses Aquatic Preserve_Natural ---------------------------------------
-
-bbs_sho25 <- oysterraw[!is.na(ShellHeight_mm) & 
-                        ShellHeight_mm >= 25 &
-                        MA_plotlab == "Big Bend Seagrasses Aquatic Preserve_Natural", ]
-
-saveRDS(bbs_sho25, here::here(paste0('GLMMs/AllDates/Data/bbs_sho25_', Sys.Date(), '.rds')))
-
-
-
-### BBSAP - 25 to 75mm -------------------------------------------------------
-
-bbs_sh25to75 <- subset(bbs_sho25, bbs_sho25$ShellHeight_mm < 75)
-
-saveRDS(bbs_sh25to75, here::here(paste0('GLMMs/AllDates/Data/bbs_sh25to75_', Sys.Date(), '.rds')))
-
-bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, prior = c(set_prior("normal(125.4, 80)", class = "meanme"), set_prior("normal(49.59, 100)", class = "sdme"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
-bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
-
-# Create model results tables and save diagnostic plots and marginal effects plots
-data <- bbs_sh25to75
-models <- list(bbs_sh25to75_glmm_hist) 
-modresults(data, models, "Size class", meplotzoom = FALSE)
-
-
-### BBSAP - >75mm -------------------------------------------------------
-
-bbs_sho75 <- bbs_sho25[ShellHeight_mm >= 75, ]
-
-saveRDS(bbs_sho75, here::here(paste0('GLMMs/AllDates/Data/bbs_sho75_', Sys.Date(), '.rds')))
-
-bbs_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(bbs_sho75, bbs_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4118, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sho75_glmm_hist3.rds")
-
-# Create model results tables and save diagnostic plots and marginal effects plots
-data <- bbs_sho75
-models <- list(bbs_sho75_glmm_hist) 
-modresults(data, models, "Size class", meplotzoom = FALSE)
+# ## Big Bend Seagrasses Aquatic Preserve_Natural ---------------------------------------
+# 
+# bbs_sho25 <- oysterraw[!is.na(ShellHeight_mm) & 
+#                         ShellHeight_mm >= 25 &
+#                         MA_plotlab == "Big Bend Seagrasses Aquatic Preserve_Natural", ]
+# 
+# saveRDS(bbs_sho25, here::here(paste0('GLMMs/AllDates/Data/bbs_sho25_', Sys.Date(), '.rds')))
+# 
+# 
+# 
+# ### BBSAP - 25 to 75mm -------------------------------------------------------
+# 
+# bbs_sh25to75 <- subset(bbs_sho25, bbs_sho25$ShellHeight_mm < 75)
+# 
+# saveRDS(bbs_sh25to75, here::here(paste0('GLMMs/AllDates/Data/bbs_sh25to75_', Sys.Date(), '.rds')))
+# 
+# bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, prior = c(set_prior("normal(125.4, 80)", class = "meanme"), set_prior("normal(49.59, 100)", class = "sdme"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
+# bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
+# 
+# # Create model results tables and save diagnostic plots and marginal effects plots
+# data <- bbs_sh25to75
+# models <- list(bbs_sh25to75_glmm_hist) 
+# modresults(data, models, "Size class", meplotzoom = FALSE)
+# 
+# 
+# ### BBSAP - >75mm -------------------------------------------------------
+# 
+# bbs_sho75 <- bbs_sho25[ShellHeight_mm >= 75, ]
+# 
+# saveRDS(bbs_sho75, here::here(paste0('GLMMs/AllDates/Data/bbs_sho75_', Sys.Date(), '.rds')))
+# 
+# bbs_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(bbs_sho75, bbs_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4118, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sho75_glmm_hist3.rds")
+# 
+# # Create model results tables and save diagnostic plots and marginal effects plots
+# data <- bbs_sho75
+# models <- list(bbs_sho75_glmm_hist) 
+# modresults(data, models, "Size class", meplotzoom = FALSE)
 
 
 ## Estero Bay Aquatic Preserve_Natural ---------------------------------------
